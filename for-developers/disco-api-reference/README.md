@@ -22,15 +22,14 @@ Please fill out [this](https://discoxyz.typeform.com/requestapi) typeform here a
 
 </details>
 
-Check out our API Docs [here](http://docs.disco.xyz/api).&#x20;
-
 ## Capabilities
 
-* Get all credentials
-* Get a specific credential
-* Get a disco user if it exists
-* Fetch a Disco’s profile (account linkages, PFP, bio, eth Address)
-* Verify a Credential
+* Get all [credentials](credentials.md)
+* Get a specific [credential](credentials.md)
+* Get a Disco [profile](profiles.md)
+* Fetch a Disco’s [profile](profiles.md) (account linkages, PFP, bio, eth Address)
+* Verify a [Credential](credentials.md)
+* (NEW) [Issue a Credential](issue-a-credential-programmatic-issuance.md)
 
 ### Reference Apps
 
