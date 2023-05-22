@@ -32,6 +32,7 @@
   * [Profiles](for-developers/disco-api-reference/profiles.md)
   * [Credentials](for-developers/disco-api-reference/credentials.md)
   * [Issue a Credential (Programmatic Issuance)](for-developers/disco-api-reference/issue-a-credential-programmatic-issuance.md)
+* [Gating a server-side page by a credential](for-developers/gating-a-server-side-page-by-a-credential.md)
 
 ## Use Cases
 

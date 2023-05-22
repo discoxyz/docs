@@ -65,7 +65,7 @@ A decentralized identifier. This can be fetched from the URL of the Disco profil
 
 ### Get Profile by Ethereum address
 
-{% swagger method="get" path="/{eth_address}" baseUrl="https://api.disco.xyz/v1/profile" summary="Get Profile via Ethereum address" %}
+{% swagger method="get" path="/address/{eth_address}" baseUrl="https://api.disco.xyz/v1/profile" summary="Get Profile via Ethereum address" %}
 {% swagger-description %}
 Returns a Disco profile if it exists given its linked ETH Address. This only works if you've created a data backpack at http://app.disco.xyz and linked your ETH address!
 {% endswagger-description %}
