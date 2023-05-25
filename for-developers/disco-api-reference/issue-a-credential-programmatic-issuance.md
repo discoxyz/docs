@@ -47,7 +47,7 @@ Schema URL of which schema you'd like to create.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="recipientDID" type="String" required="true" %}
-DID of which recipient you'd like to receive the credential.
+DID of which recipient you'd like to receive the credential. Supports did:ethr:<eth_address> for now.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="subjectData " type="JSON" %}

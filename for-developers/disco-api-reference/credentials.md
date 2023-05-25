@@ -328,6 +328,10 @@ schema type to search for: e.g:
 
 ### Verify a Credential
 
+**About:** The following is a Disco-hosted API endpoint for you to verify your credential. If you'd like to use a library to self-verify a credential in your app without relying on Disco as a central authority, [here](https://gist.github.com/aldigjo/41a20d8fced39d4c47e7ac088f0c35c0) is a snippet. \
+\
+Reminder that JWT (JSON Web Tokens) can be decoded using something like [https://jwt.io/](https://jwt.io/).
+
 
 
 {% swagger method="post" path="" baseUrl="https://api.disco.xyz/v1/credential/verify" summary="Verify a Credential" %}
