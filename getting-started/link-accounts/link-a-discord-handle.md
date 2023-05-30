@@ -15,7 +15,11 @@ To prove that you have custody/control of this Discord account, you need to shar
 * Go to Disco's Discord channel here: [https://discord.com/invite/nvxsa6paYv](https://discord.com/invite/nvxsa6paYv)
 * From the instructions page, copy and send the following verification message into the channel #verify-yourself.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 This message creates a provable link between your identifier and your discord account. The verifier bot will respond with an attestation link, copy that link and paste it in the text box to confirm!
 
