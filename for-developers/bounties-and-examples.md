@@ -14,7 +14,9 @@ Programmatic Issuance to issue a Verifiable Credential - $400 USDC
 
 ## Example Repositories
 
-Here are some example repositories to help you get set up building with Disco!
+Here are some example repositories to help you get set up building with Disco!&#x20;
+
+If you need an API key, please fill out [this](https://discoxyz.typeform.com/requestapi) typeform here.
 
 {% embed url="https://github.com/discoxyz/template-disco-app" %}
 Template for gating server-side rendered pages by verifying a credential
