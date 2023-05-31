@@ -12,19 +12,27 @@ description: Here are some live bounties, and example apps to help you get start
 Programmatic Issuance to issue a Verifiable Credential - $400 USDC
 {% endembed %}
 
-## Example Repositories
+## Reference Apps/Implementations
 
 Here are some example repositories to help you get set up building with Disco!&#x20;
 
 If you need an API key, please fill out [this](https://discoxyz.typeform.com/requestapi) typeform here.
 
+#### Gating a Server-Side Page
+
+Template for gating server-side rendered pages by verifying a credential, in Typescript
+
 {% embed url="https://github.com/discoxyz/template-disco-app" %}
-Template for gating server-side rendered pages by verifying a credential
-{% endembed %}
+
+#### Simple Demo App
+
+Disco Demo App: Renders confetti page if an OfficialDisconautCredential is detected
 
 {% embed url="https://github.com/discoxyz/disco-demo" %}
-Disco Demo App: Renders confetti page if an official Disconaut Cred is detected
-{% endembed %}
+
+#### GM Leaderboard
+
+GM Leaderboard: Counts a list of users with public GM's, and ranks them against each other
 
 {% embed url="https://github.com/discoxyz/disco-gm-leaderboard" %}
 Gm leaderboard! Fork your own, steps to customize this for your own credential coming soon.

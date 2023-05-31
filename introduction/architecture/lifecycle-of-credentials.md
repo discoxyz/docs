@@ -14,8 +14,8 @@ We currently use [Ceramic](http://ceramic.network) - a decentralized storage pro
 [faqs.md](../../learn-more/faqs.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../for-developers/disco-api-reference/" %}
-[disco-api-reference](../../for-developers/disco-api-reference/)
+{% content-ref url="../../for-developers/getting-started-with-discos-api/" %}
+[getting-started-with-discos-api](../../for-developers/getting-started-with-discos-api/)
 {% endcontent-ref %}
 
 \

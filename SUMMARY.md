@@ -28,10 +28,10 @@
 
 ## For Developers
 
-* [⚒ Disco API Reference](for-developers/disco-api-reference/README.md)
-  * [Profiles](for-developers/disco-api-reference/profiles.md)
-  * [Credentials](for-developers/disco-api-reference/credentials.md)
-  * [Issue a Credential (Programmatic Issuance)](for-developers/disco-api-reference/issue-a-credential-programmatic-issuance.md)
+* [⚒ Getting Started with Disco's API](for-developers/getting-started-with-discos-api/README.md)
+  * [Profiles](for-developers/getting-started-with-discos-api/profiles.md)
+  * [Credentials](for-developers/getting-started-with-discos-api/credentials.md)
+  * [Issue a Credential (Programmatic Issuance)](for-developers/getting-started-with-discos-api/issue-a-credential-programmatic-issuance.md)
 * [🎯 Bounties & Examples](for-developers/bounties-and-examples.md)
 
 ## Use Cases
