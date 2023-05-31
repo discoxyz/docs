@@ -24,24 +24,26 @@ To issue a credential with the special branding, simply click "Issue Credential"
 
 ### Batch Issuance
 
-**Preparation:** Batch issuance allows you to issue any credential to a group of DIDs, or Ethereum addresses using _one single click_. In this case, you can issue membership credentials to your entire list of members in one click.
+**Preparation:**&#x20;
+
+Batch issuance allows you to issue any credential to a group of DIDs, or Ethereum addresses using _one single click_. In this case, you can issue membership credentials to your entire list of members in one click.
+
+Remember that you will need special permissions, an Organization Credential from Disco. Fill out [this](https://discoxyz.typeform.com/orgcred?typeform-source=app.gitbook.com) form to request one.
 
 You will need a .csv file of these addresses, or you can manually input them. [Here](https://docs.google.com/spreadsheets/d/13oj4aKz6ENG0OmqiKNRhPgkUP7XyHJrrccS040x2VWI/edit#gid=577048407) is an example of using DIDs, but you can also replace this with ETH addresses.
 
-Start by navigating to "_Schemas"_ on the top navigation bar
+**Issuance**
+
+Now you have your CSV prepared, we can issue! Start by navigating to "_Schemas"_ on the top navigation bar.
 
 <img src="../.gitbook/assets/image (10).png" alt="" data-size="original">
 
-Click on the "_Issue Batch Credential button_". Select the schema that you’d like to issue. If you’d like a custom schema to be added, please reach out in the Discord.
+Click on _**Issue Credential**_. Select the schema that you’d like to issue. If you’d like a custom schema to be added, please reach out in the Discord.
 
-<img src="https://docs.disco.xyz/assets/images/my_schemas-1923bbfeba1c1126aa4be9d3353bacc5.png" alt="" data-size="original">
+<figure><img src="../.gitbook/assets/Screen Shot 2023-05-31 at 12.52.53 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Fill out the fields below. In the case below, I’ll fill out the required field: **Organizational Name.**
+Fill out any relevant fields, and Choose your CSV file you'd like to upload.
 
-<img src="https://docs.disco.xyz/assets/images/org_issue-5da48ff1f99df2ebce6af106b450f6d8.png" alt="" data-size="original">
+<figure><img src="../.gitbook/assets/Screen Shot 2023-05-31 at 12.51.20 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
-On the right side, we’ll list out our recipients. You can either choose to paste a few DID’s, or upload a CSV.
-
-Maybe you have a list of members’ Ethereum addresses, you can reuse this! For the CSV you won’t need any column headers, a simple list is fine.&#x20;
-
-Once you’ve uploaded your CSV or put in the recipients, you can proceed to issuance. Once you ensure everything’s good to go, you can fire it off to your favorite people!
+Once you’ve uploaded your CSV or put in the recipients manually, the DIDs will populate and you can click on **Issue** to fire them off. Congrats!
