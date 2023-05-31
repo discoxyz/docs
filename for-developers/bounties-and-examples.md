@@ -12,9 +12,9 @@ description: Here are some live bounties, and example apps to help you get start
 Programmatic Issuance to issue a Verifiable Credential - $400 USDC
 {% endembed %}
 
-##
-
 ## Example Repositories
+
+Here are some example repositories to help you get set up building with Disco!
 
 {% embed url="https://github.com/discoxyz/template-disco-app" %}
 Template for gating server-side rendered pages by verifying a credential
