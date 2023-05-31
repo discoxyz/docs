@@ -36,7 +36,7 @@ Click on the "_Issue Batch Credential button_". Select the schema that you’d l
 
 <img src="https://docs.disco.xyz/assets/images/my_schemas-1923bbfeba1c1126aa4be9d3353bacc5.png" alt="" data-size="original">
 
-Fill out the fields below. In the case below, I’ll fill out the required field: Organizational Name.
+Fill out the fields below. In the case below, I’ll fill out the required field: **Organizational Name.**
 
 <img src="https://docs.disco.xyz/assets/images/org_issue-5da48ff1f99df2ebce6af106b450f6d8.png" alt="" data-size="original">
 

@@ -31,7 +31,11 @@ Please fill out [this](https://discoxyz.typeform.com/requestapi) typeform here a
 * Verify a [Credential](credentials.md), either JWT or JSON-LD
 * (**NEW**) [Issue a Credential](issue-a-credential-programmatic-issuance.md) to a DID or Ethereum Address
 
-###
+{% hint style="info" %}
+**Note:** At Disco we take privacy very seriously. The API will only return credentials that are made _public_ by the user. Credentials are by default, private. \
+\
+More info on how to make a credential public here
+{% endhint %}
 
 
 

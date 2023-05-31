@@ -43,8 +43,8 @@ Learn more about Data Backpacks in [How it Works](broken-reference).\
 [glossary.md](learn-more/glossary.md)
 {% endcontent-ref %}
 
-{% content-ref url="for-developers/getting-started-with-discos-api/" %}
-[getting-started-with-discos-api](for-developers/getting-started-with-discos-api/)
+{% content-ref url="for-developers/disco-api-reference/" %}
+[disco-api-reference](for-developers/disco-api-reference/)
 {% endcontent-ref %}
 
 {% content-ref url="learn-more/faqs.md" %}

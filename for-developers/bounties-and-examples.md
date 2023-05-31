@@ -35,8 +35,6 @@ Disco Demo App: Renders confetti page if an OfficialDisconautCredential is detec
 GM Leaderboard: Counts a list of users with public GM's, and ranks them against each other
 
 {% embed url="https://github.com/discoxyz/disco-gm-leaderboard" %}
-Gm leaderboard! Fork your own, steps to customize this for your own credential coming soon.
-{% endembed %}
 
 
 
