@@ -14,11 +14,12 @@
 ## Getting Started
 
 * [🎒 Create a Data Backpack](getting-started/create-a-data-backpack.md)
+* [🧑🚀 Claiming your Official Disconaut Credential](getting-started/claiming-your-official-disconaut-credential.md)
 * [⚙ Link Accounts](getting-started/link-accounts/README.md)
   * [Link a Twitter Account](getting-started/link-accounts/link-a-twitter-account.md)
   * [Link a Discord handle](getting-started/link-accounts/link-a-discord-handle.md)
   * [Link a domain](getting-started/link-accounts/link-a-domain.md)
-* [📧 Issue a Credential](getting-started/issue-a-credential.md)
+* [📧 Sending a Credential](getting-started/sending-a-credential.md)
 
 ## For Organizations
 
