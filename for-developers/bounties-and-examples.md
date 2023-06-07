@@ -8,6 +8,12 @@ description: Here are some live bounties, and example apps to help you get start
 
 ## :dart: Live Bounties
 
+
+
+{% embed url="https://github.com/turbo-eth/template-web3-app/issues/53" %}
+Bounty: Livepeer + Disco (Video Gating using Verifiable Credentials) - 175 OP Reward&#x20;
+{% endembed %}
+
 {% embed url="https://github.com/turbo-eth/template-disco-app/issues/5" %}
 Programmatic Issuance to issue a Verifiable Credential - $400 USDC
 {% endembed %}
