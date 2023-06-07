@@ -4,7 +4,7 @@ description: Here are some live bounties, and example apps to help you get start
 
 # 🎯 Bounties & Examples
 
-#### Last Updated: 5/30/2023&#x20;
+#### Last Updated: 6/7/2023&#x20;
 
 ## :dart: Live Bounties
 
