@@ -24,7 +24,9 @@
 ## For Organizations
 
 * [Getting Started](for-organizations/getting-started.md)
-* [Issuing Credentials](for-organizations/issuing-credentials.md)
+* [Issuing Credentials](for-organizations/issuing-credentials/README.md)
+  * [Manual Issuance](for-organizations/issuing-credentials/manual-issuance.md)
+  * [Batch Issuance](for-organizations/issuing-credentials/batch-issuance.md)
 * [What's Next?](for-organizations/whats-next.md)
 
 ## For Developers
