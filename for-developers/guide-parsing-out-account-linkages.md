@@ -6,7 +6,7 @@ description: >-
 
 # Guide: Parsing out Account Linkages
 
-**Prerequisites**: This assumes that you already have an existing API key, and you've read the Getting Started guide [here](get-started-with-discos-api/).&#x20;
+**Prerequisites**: This assumes that you already have an existing API key, and you've read the Getting Started guide [here](disco-api-reference/).&#x20;
 
 ## To parse out Account Linkages
 
