@@ -214,7 +214,7 @@ curl --location 'http://api.disco.xyz/v1/credential/' \
 
 <summary>Example Javascript (node using fetch) request</summary>
 
-````java
+````javascript
 
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");

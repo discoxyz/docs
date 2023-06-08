@@ -55,7 +55,7 @@ layout: landing
 
 ### How can I issue a large amount of credentials? <a href="#how-can-i-issue-a-large-amount-of-credentials-programmatically" id="how-can-i-issue-a-large-amount-of-credentials-programmatically"></a>
 
-* Use [Batch Issuance for Organizations.](../for-organizations/issuing-credentials/) Reach out to us if you have more than 10,000 credentials you'd like to issue.
+* Use [Batch Issuance for Organizations.](../for-organizations/issuing-credentials.md) Reach out to us if you have more than 10,000 credentials you'd like to issue.
 
 ### How do I create credentials about myself? <a href="#can-i-write-verifiable-credentials-about-myself" id="can-i-write-verifiable-credentials-about-myself"></a>
 

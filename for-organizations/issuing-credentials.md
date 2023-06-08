@@ -6,7 +6,7 @@ description: >-
 
 # Issuing Credentials
 
-You have two options for issuing credentials: [#manual-issuance](./#manual-issuance "mention") and [#batch-issuance](./#batch-issuance "mention").
+You have two options for issuing credentials: [#manual-issuance](issuing-credentials.md#manual-issuance "mention") and [#batch-issuance](issuing-credentials.md#batch-issuance "mention").
 
 You can do this manually if you know the recipient's DID, Ethereum address, or social media handle using our search functionality.
 

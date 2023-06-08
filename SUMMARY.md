@@ -24,18 +24,19 @@
 ## For Organizations
 
 * [Getting Started](for-organizations/getting-started.md)
-* [Issuing Credentials](for-organizations/issuing-credentials/README.md)
+* [Issuing Credentials](for-organizations/issuing-credentials.md)
   * [Manual Issuance](for-organizations/issuing-credentials/manual-issuance.md)
   * [Batch Issuance](for-organizations/issuing-credentials/batch-issuance.md)
 * [What's Next?](for-organizations/whats-next.md)
 
 ## For Developers
 
-* [⚒ Getting Started with Disco's API](for-developers/disco-api-reference/README.md)
-  * [Profiles](for-developers/disco-api-reference/profiles.md)
-  * [Credentials](for-developers/disco-api-reference/credentials.md)
-  * [Issue a Credential (Programmatic Issuance)](for-developers/disco-api-reference/issue-a-credential-programmatic-issuance.md)
+* [⚒ Get started with Disco's API](for-developers/get-started-with-discos-api/README.md)
+  * [Profiles](for-developers/get-started-with-discos-api/profiles.md)
+  * [Credentials](for-developers/get-started-with-discos-api/credentials.md)
+  * [Issue a Credential (Programmatic Issuance)](for-developers/get-started-with-discos-api/issue-a-credential-programmatic-issuance.md)
 * [🎯 Bounties & Examples](for-developers/bounties-and-examples.md)
+* [Guide: Parsing out Account Linkages](for-developers/guide-parsing-out-account-linkages.md)
 
 ## Use Cases
 
