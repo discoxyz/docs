@@ -12,15 +12,19 @@ You will likely need the following:
 * Any library capable of making http requests (fetch, axios, httpie, etc)
 * A valid API token (more below)
 
-### Getting Started
+## Generate an API Key
 
-<details>
+Generating an API key is self-service now! **It is no longer a requirement to hold an Organization Credential.**
 
-<summary>Request an API Key</summary>
+Simply navigate to your _Profile > Settings ⚙️ > Api Keys > + Create API Key_
 
-Please fill out [this](https://discoxyz.typeform.com/requestapi) typeform here and we'll get you an API key as soon as possible.&#x20;
+<figure><img src="../../.gitbook/assets/Screen Shot 2023-06-28 at 11.14.43 AM.png" alt=""><figcaption></figcaption></figure>
 
-</details>
+Click “_Create API Key_” to generate your first API key, and enter a Descriptive Name. Remember, each key requires a unique name that reflects its purpose.
+
+When you generate your API key, make sure to copy it as soon as it appears for the first time. The dashboard also provides you with the flexibility to delete existing API keys and create new ones whenever you need to.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2023-06-28 at 11.16.37 AM.png" alt=""><figcaption><p>Manage your existing API keys</p></figcaption></figure>
 
 ## Current Capabilities
 
