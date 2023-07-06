@@ -164,7 +164,7 @@ A decentralized identifier. This can be fetched from the URL of the Disco profil
 
 ### Get a credential type
 
-{% swagger method="get" path="" baseUrl="http://api.disco.xyz/v1/profile/{did}/credentials/byTypes?types={type} " summary="Get credentials by DID and type" %}
+{% swagger method="get" path="" baseUrl="https://api.disco.xyz/v1/profile/{did}/credentials/byTypes?types={type} " summary="Get credentials by DID and type" %}
 {% swagger-description %}
 Given a did and credential type, return all 
 
