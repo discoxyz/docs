@@ -7,7 +7,7 @@ description: >-
 # 🎒 Create a Data Backpack
 
 {% hint style="info" %}
-**Note:** You will need an Ethereum compatible wallet! (We recommend Metamask on Desktop).
+**Note:** You will need an Ethereum compatible wallet! We currently support any Browser Wallet, Rainbow, WalletConnect, and Zerion.
 
 For more information on setting up a wallet, please visit [MetaMask Learn](https://learn.metamask.io/).
 {% endhint %}
@@ -17,6 +17,10 @@ For more information on setting up a wallet, please visit [MetaMask Learn](https
 First, head to [https://app.disco.xyz/](https://app.disco.xyz/) on your browser.
 
 <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+Click on _**Connect your Wallet**_**,** and select the wallet you'll be using. If you're using **Metamask**, select Browser Wallet.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-07-19 at 12.49.32 PM.png" alt=""><figcaption></figcaption></figure>
 
 Once you connect your wallet, you'll see a pop-up modal to create your Data Backpack.
 
