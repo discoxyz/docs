@@ -30,7 +30,7 @@ import axios from 'axios';
 ```javascript
 let config = {
   method: 'get',
-  url: 'api.disco.xyz/v1/profile/address/0xc5e46e48f1ef5f305afba45c3122021dd09ed3de',
+  url: 'api.disco.xyz/v1/profile/address/0xE6FF2d91f6EeEe8BDA4bCc562d63c431496FCf2A',
   headers: { 
     'Authorization': 'Bearer <YOUR_API_KEY_HERE>'
   }
