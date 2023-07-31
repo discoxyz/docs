@@ -29,22 +29,43 @@
   * [Batch Issuance](for-organizations/issuing-credentials/batch-issuance.md)
 * [What's Next?](for-organizations/whats-next.md)
 
-## For Developers
+## For Builders
 
-* [⚒ Get started with Disco's API](for-developers/disco-api-reference/README.md)
-  * [Profiles](for-developers/disco-api-reference/profiles.md)
-  * [Credentials](for-developers/disco-api-reference/credentials.md)
-  * [Issue a Credential (Programmatic Issuance)](for-developers/disco-api-reference/issue-a-credential-programmatic-issuance.md)
-* [🎯 Bounties & Examples](for-developers/bounties-and-examples.md)
-* [Guide: Parsing out Account Linkages](for-developers/guide-parsing-out-account-linkages.md)
+* [Requirements](for-builders/requirements.md)
+* [Generate an API Key](for-builders/generate-an-api-key.md)
+* [API Endpoints](for-builders/api-endpoints/README.md)
+  * [Profiles](for-builders/api-endpoints/profiles/README.md)
+    * [Use Case: Parsing out Account Linkages](for-builders/api-endpoints/profiles/use-case-parsing-out-account-linkages.md)
+  * [Credentials](for-builders/api-endpoints/credentials/README.md)
+    * [Verify a Credential](for-builders/api-endpoints/credentials/verify-a-credential.md)
+  * [Programmatic Issuance](for-builders/api-endpoints/programmatic-issuance.md)
 
-## Use Cases
+## Integrations
 
-* [Disco Partners](use-cases/disco-partners/README.md)
-  * [Gating a Telegram Chat with Guild](use-cases/disco-partners/gating-a-telegram-chat-with-guild.md)
-  * [Gating a Discord Server with Guild](use-cases/disco-partners/gating-a-discord-server-with-guild.md)
-  * [Gating a Google Doc with Guild](use-cases/disco-partners/gating-a-google-doc-with-guild.md)
-  * [Gating a Github Repo with Guild](use-cases/disco-partners/gating-a-github-repo-with-guild.md)
+* [Verify Credentials](integrations/verify-credentials/README.md)
+  * [Gatekeeper Integration](integrations/verify-credentials/gatekeeper-integration.md)
+* [Gate Access with Credentials](integrations/gate-access-with-credentials/README.md)
+  * [Community Management: Guild.xyz Integration](integrations/gate-access-with-credentials/community-management-guild.xyz-integration/README.md)
+    * [Gating a Telegram Chat with Guild](integrations/gate-access-with-credentials/community-management-guild.xyz-integration/gating-a-telegram-chat-with-guild.md)
+    * [Gating a Discord Server with Guild](integrations/gate-access-with-credentials/community-management-guild.xyz-integration/gating-a-discord-server-with-guild.md)
+
+## Demos & Templates
+
+* [Portability](demos-and-templates/portability/README.md)
+  * [Form Fill with Disco](demos-and-templates/portability/form-fill-with-disco.md)
+* [Gamify Credentials](demos-and-templates/gamify-credentials/README.md)
+  * [GM Leaderboard](demos-and-templates/gamify-credentials/gm-leaderboard.md)
+* [Access Control](demos-and-templates/access-control/README.md)
+  * [Ecommerce: Shopify Plugin](demos-and-templates/access-control/ecommerce-shopify-plugin.md)
+  * [Server Side Rendered Page](demos-and-templates/access-control/server-side-rendered-page.md)
+  * [Smart Contracts: District Labs Demo](demos-and-templates/access-control/smart-contracts-district-labs-demo.md)
+* [Programmatic Issuance](demos-and-templates/programmatic-issuance/README.md)
+  * [In-App Actions](demos-and-templates/programmatic-issuance/in-app-actions/README.md)
+    * [Claim Credential Page](demos-and-templates/programmatic-issuance/in-app-actions/claim-credential-page.md)
+    * [Button Click: GM Faucet Demo](demos-and-templates/programmatic-issuance/in-app-actions/button-click-gm-faucet-demo.md)
+  * [From 3rd Party Apps](demos-and-templates/programmatic-issuance/from-3rd-party-apps/README.md)
+    * [Cred Protocol Digital Asset Score](demos-and-templates/programmatic-issuance/from-3rd-party-apps/cred-protocol-digital-asset-score.md)
+    * [Gitcoin Passport Score Demo](demos-and-templates/programmatic-issuance/from-3rd-party-apps/gitcoin-passport-score-demo.md)
 
 ## Learn more
 

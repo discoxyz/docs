@@ -2,7 +2,7 @@
 description: This is an ongoing list of Partner Apps we've integrated with
 ---
 
-# Disco Partners
+# Gate Access with Credentials
 
 _Last_ _updated: May 2, 2023_
 
@@ -17,10 +17,10 @@ You can read more about guild [here](https://docs.guild.xyz/guild/guides/readme)
 By integrating Disco and Guild.xyz, you can now easily:
 
 * Using Verifiable Credentials, you can now gate any of the following (see instructions that follow):
-  * [A Telegram chat ](gating-a-telegram-chat-with-guild.md)
-  * [A Discord Server](gating-a-discord-server-with-guild.md)
-  * [A Google Doc](gating-a-google-doc-with-guild.md)
-  * [A Github Repo](gating-a-github-repo-with-guild.md)
+  * [A Telegram chat ](community-management-guild.xyz-integration/gating-a-telegram-chat-with-guild.md)
+  * [A Discord Server](community-management-guild.xyz-integration/gating-a-discord-server-with-guild.md)
+  * [A Google Doc](broken-reference)
+  * [A Github Repo](broken-reference)
 * Use AND/OR logic to extend on-chain checks to customize roles and access restrictions even further (NFT ownership, DAO Membership, etc).
 
 #### Join our Guild[​](https://docs.disco.xyz/Use%20Cases/gating-access-with-guild#join-our-guild) <a href="#join-our-guild" id="join-our-guild"></a>

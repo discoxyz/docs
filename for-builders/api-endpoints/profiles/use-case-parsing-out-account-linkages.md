@@ -4,9 +4,11 @@ description: >-
   them in your DApp, and contains code samples in Javascript.
 ---
 
-# Guide: Parsing out Account Linkages
+# Use Case: Parsing out Account Linkages
 
-**Prerequisites**: This assumes that you already have an existing API key, and you've read the Getting Started guide [here](disco-api-reference/).&#x20;
+**Prerequisites**: This assumes that you already have an existing API key, and you've read the Getting Started guide [here](../../generate-an-api-key.md).&#x20;
+
+We'll be using the /profile/address/\<ETH> endpoint from the Disco API.
 
 ## To parse out Account Linkages
 

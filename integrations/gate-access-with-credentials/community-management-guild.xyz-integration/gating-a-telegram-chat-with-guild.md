@@ -16,11 +16,11 @@ Visit guild.xyz, and click Create a Guild.&#x20;
 
 Choose **Telegram** as the designated platform. Be sure that your wallet is connected and you've signed a message to verify ownership.
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 First, be sure that you have a Telegram Group ready to gate. You'll add the Guild bot to the chat in Telegram, and enter the group ID including the dash in the beginning. Example: -953090436
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2023-05-02 at 11.42.33 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-05-02 at 11.42.33 AM.png" alt=""><figcaption></figcaption></figure>
 
 **Add Integration.**
 

@@ -1,18 +1,12 @@
 ---
-description: May 5, 2023
+description: Describes how to issue a credential programmatically, via the API
 ---
 
-# Issue a Credential (Programmatic Issuance)
-
-**Welcome to pilot beta of our Programmatic Issuance for Partners, we are so excited to deliver this feature for you all.**&#x20;
-
-**Thank you for your continued patience!**
-
-
+# Programmatic Issuance
 
 **You will need:**
 
-* A valid API key (please reach out to Masha/Eric for one)
+* A valid API key, from the steps here: [generate-an-api-key.md](../generate-an-api-key.md "mention")
 * any HTTP library, curl, or Postman
 * the schema URL to issue
 * fields and descriptions for your schemas to issue.

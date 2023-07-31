@@ -16,13 +16,13 @@ Visit guild.xyz, and click Create a Guild.&#x20;
 
 Choose **Discord** as the designated platform. Be sure that your wallet is connected and you've signed a message to verify ownership.
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 Once you OAuth with the popout window, you'll be able to select the server you're an admin in, and add the bot.&#x20;
 
 Indicate if you'll grant a specific role in Discord, and you'll see the following modal to Edit the role.
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2023-05-02 at 12.16.12 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-05-02 at 12.16.12 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 **Click on add requirement.**
 
