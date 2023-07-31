@@ -17,7 +17,7 @@ Disco is a digital identity data backpack where you can stash your private data 
 
 * **Interoperability**: We are chain-agnostic and you can take your portable credentials anywhere.
 * **Privacy**: You are given the tools to consent to how information is shared and with whom. PII (Personal Identifiable Information) data is never committed to public blockchains.
-* **Autonomy**: You as the user, should be able to own your own data. You own your own keys and no central authority can revoke or censor this.
+* **Autonomy**: You as the user, should be able to own your own data.
 
 ## Identity as it is today <a href="#identity-as-it-is-today" id="identity-as-it-is-today"></a>
 
