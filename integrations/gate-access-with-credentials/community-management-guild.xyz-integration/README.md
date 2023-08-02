@@ -8,12 +8,13 @@ You can read more about guild[ here](https://docs.guild.xyz/guild/guides/readme)
 
 **Capabilities**[​](https://docs.disco.xyz/Use%20Cases/gating-access-with-guild#capabilities)
 
-By integrating Disco and Guild.xyz, you can now easily use Verifiable Credentials to gate:
+By integrating Disco and Guild.xyz, you can now easily:
 
-* A Telegram chat
-* A Discord Server
-* A Google Doc
-* A Github Repo
+* Using Verifiable Credentials, you can now gate any of the following (see instructions that follow):
+  * [A Telegram chat ](gating-a-telegram-chat-with-guild.md)
+  * [A Discord Server](gating-a-discord-server-with-guild.md)
+  * [A Google Doc](broken-reference)
+  * [A Github Repo](broken-reference)
 * Use AND/OR logic to extend on-chain checks to customize roles and access restrictions even further (NFT ownership, DAO Membership, etc).
 
 ### **Join our Guild**[**​**](https://docs.disco.xyz/Use%20Cases/gating-access-with-guild#join-our-guild)

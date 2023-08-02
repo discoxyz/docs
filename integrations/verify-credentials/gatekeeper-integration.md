@@ -4,10 +4,6 @@ description: Gatekeeper Integration with Disco's API
 
 # Gatekeeper Integration
 
-### What is Gatekeeper?
-
-GateKeeper is an SDK and API for Web3 content gating and verifiable credential issuance. The current Web3 digital identity landscape is fragmented. GateKeeper aims to aggregate all Web3 & Web2 credentials so apps/businesses like yours can seamlessly gate content using Web3 and Web2 identity points.
-
 ### Overview
 
 We are thrilled to announce that GateKeeper has integrated Disco's API in a demo.
@@ -28,15 +24,13 @@ What does this integration mean for you? Now, any community or team that wants t
 4. Under API check, click "template" and choose Disco.XYZ. Select the desired credential types issued by Disco.XYZ and create a curated list of credentials you want to use for access control.
 5. Save the role, return to your access control dashboard, and select "check" on your newly created role. Copy and paste the generated code snippet from GateKeeper into the UI of the content you want to GateKeep.
 
-
-
-
-
 ### Video Demo
 
 {% embed url="https://www.youtube.com/watch?v=1IEh2nxY1vg" %}
 
+### What is Gatekeeper?
 
+GateKeeper is an SDK and API for Web3 content gating and verifiable credential issuance. The current Web3 digital identity landscape is fragmented. GateKeeper aims to aggregate all Web3 & Web2 credentials so apps/businesses like yours can seamlessly gate content using Web3 and Web2 identity points.
 
 ## Want to learn more about GateKeeper? <a href="#a032" id="a032"></a>
 

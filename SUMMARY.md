@@ -36,18 +36,18 @@
 * [API Endpoints](for-builders/api-endpoints/README.md)
   * [Profiles](for-builders/api-endpoints/profiles/README.md)
     * [Use Case: Parsing out Account Linkages](for-builders/api-endpoints/profiles/use-case-parsing-out-account-linkages.md)
-  * [Credentials](for-builders/api-endpoints/credentials/README.md)
-    * [Verify a Credential](for-builders/api-endpoints/credentials/verify-a-credential.md)
+  * [Credentials](for-builders/api-endpoints/credentials.md)
+  * [Verify a Credential](for-builders/api-endpoints/verify-a-credential.md)
   * [Programmatic Issuance](for-builders/api-endpoints/programmatic-issuance.md)
 
 ## Integrations
 
-* [Verify Credentials](integrations/verify-credentials/README.md)
-  * [Gatekeeper Integration](integrations/verify-credentials/gatekeeper-integration.md)
 * [Gate Access with Credentials](integrations/gate-access-with-credentials/README.md)
   * [Community Management: Guild.xyz Integration](integrations/gate-access-with-credentials/community-management-guild.xyz-integration/README.md)
-    * [Gating a Telegram Chat with Guild](integrations/gate-access-with-credentials/community-management-guild.xyz-integration/gating-a-telegram-chat-with-guild.md)
     * [Gating a Discord Server with Guild](integrations/gate-access-with-credentials/community-management-guild.xyz-integration/gating-a-discord-server-with-guild.md)
+    * [Gating a Telegram Chat with Guild](integrations/gate-access-with-credentials/community-management-guild.xyz-integration/gating-a-telegram-chat-with-guild.md)
+* [Verify Credentials](integrations/verify-credentials/README.md)
+  * [Gatekeeper Integration](integrations/verify-credentials/gatekeeper-integration.md)
 
 ## Demos & Templates
 
@@ -61,8 +61,8 @@
   * [Smart Contracts: District Labs Demo](demos-and-templates/access-control/smart-contracts-district-labs-demo.md)
 * [Programmatic Issuance](demos-and-templates/programmatic-issuance/README.md)
   * [In-App Actions](demos-and-templates/programmatic-issuance/in-app-actions/README.md)
-    * [Claim Credential Page](demos-and-templates/programmatic-issuance/in-app-actions/claim-credential-page.md)
     * [Button Click: GM Faucet Demo](demos-and-templates/programmatic-issuance/in-app-actions/button-click-gm-faucet-demo.md)
+    * [Claim Credential Page](demos-and-templates/programmatic-issuance/in-app-actions/claim-credential-page.md)
   * [From 3rd Party Apps](demos-and-templates/programmatic-issuance/from-3rd-party-apps/README.md)
     * [Cred Protocol Digital Asset Score](demos-and-templates/programmatic-issuance/from-3rd-party-apps/cred-protocol-digital-asset-score.md)
     * [Gitcoin Passport Score Demo](demos-and-templates/programmatic-issuance/from-3rd-party-apps/gitcoin-passport-score-demo.md)
