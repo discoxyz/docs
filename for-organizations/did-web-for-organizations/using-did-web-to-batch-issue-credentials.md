@@ -1,10 +1,12 @@
 ---
-description: As an organization with a did:web ID you can issue credentials in batches.
+description: >-
+  As an organization with a did:web ID you can issue single credentials or in
+  batches.
 ---
 
 # Using did:web to (Batch) Issue Credentials
 
-**You will need:**
+**To get started you will need:**
 
 * Your organization's `did:web` ID
 * Your `did:web` API key
@@ -13,21 +15,19 @@ description: As an organization with a did:web ID you can issue credentials in b
 
 ### Find your Schema URL
 
-Determine your schema you'd like to issue by visiting our [schema repo on github](https://github.com/discoxyz/disco-schemas/tree/main/json).
-
-Find the schema, and find the raw json. Example [here](https://github.com/discoxyz/disco-schemas/blob/main/json/GMCredential/1-0-0.json) of a GM credential.
+Determine which type of credential you'd like to issue. A full set of supported credential schemas can be found by visiting our [schema repository on github](https://github.com/discoxyz/disco-schemas/tree/main/json).
 
 ### Authentication
 
-Remember that we use Bearer Auth. This should be in the Auth header as follows:
+We use Bearer Authentication. This should be in the Authentication header as follows (using your API key):
 
-```
+```bash
 Authorization: Bearer <your did:web API key here>
 ```
 
 ### Creating your Request
 
-Here are some example code snippets for issuing a GM credential to `did:3:abc123example` using `did:web`
+Here are some example code snippets for issuing a single GM credential to `did:3:abc123example` using `did:web`
 
 <details>
 
@@ -52,6 +52,29 @@ curl --location 'http://api.disco.xyz/v1/credentials/' \
 ```
 
 </details>
+
+To send a batch of GM credentials add multiple recipients to the subjects array, as follows:
+
+```json
+{ 
+    "issuer": "did:web:api.disco.xyz/v1/<your-org-alias>",
+    "schema": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/GMCredential/1-0-0.json",
+    "suite": "jwt",
+    "subjects": [
+        {
+            "subject": { "id": "did:3:abc123example" },
+            "recipient": "did:3:abc123example",
+            "expirationDate": ""
+        },
+        {
+            "subject": { "id": "did:3:xyz987example" },
+            "recipient": "did:3:xyz987example",
+            "expirationDate": ""
+        }, 
+        ....
+    ]
+}
+```
 
 <details>
 
