@@ -22,9 +22,9 @@
 **Issue Credentials**
 
 * Programmatic Issuance
-  * [Locate Schema](https://docs.disco.xyz/v2/for-developers/guide-parsing-out-account-linkages)
-  * [Authentication](https://docs.disco.xyz/v2/for-developers/guide-parsing-out-account-linkages)
-  * [Create Request](https://docs.disco.xyz/v2/for-developers/guide-parsing-out-account-linkages)
+  * [Locate Schema](https://docs.disco.xyz/v3/for-builders/api-endpoints/programmatic-issuance#find-your-schema-url)
+  * [Authentication](https://docs.disco.xyz/v3/for-builders/api-endpoints/programmatic-issuance#find-your-schema-url)
+  * [Create Request](https://docs.disco.xyz/v3/for-builders/api-endpoints/programmatic-issuance#find-your-schema-url)
 
 {% hint style="info" %}
 **Privacy Note:** At Disco we take privacy very seriously. The API will only return credentials that are made public by the user. Credentials are by default, private. More info on how to make a credential public by toggling the eye icon[ here](https://docs.disco.xyz/v2/learn-more/faqs#does-disco-only-work-for-ethereum).
