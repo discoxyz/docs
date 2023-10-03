@@ -8,7 +8,7 @@ description: This page will show you how to link your accounts
 
 Now that you’ve signed in with your address and created your backpack, it’s time to add some data by linking a social account or domain. This will help contextualize you beyond a did or Ethereum address. We are humans, after all!&#x20;
 
-We currently support three different account types:
+We currently support four different account types:
 
 * Twitter account
 * Discord handle
