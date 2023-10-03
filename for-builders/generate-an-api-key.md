@@ -2,7 +2,9 @@
 
 ## Generate an API Key
 
-Generating an API key is self-service.
+Generating an API key enables you programmatically issue credentials to your users. Enabling you to automate access control to gathering user insights, and more. &#x20;
+
+Generating an API is seamless via our self-service experience
 
 Log into [app.disco.xyz/ ](https://app.disco.xyz/)and navigate to your _Profile > Settings ⚙️ > Api Keys > + Create API Key_
 

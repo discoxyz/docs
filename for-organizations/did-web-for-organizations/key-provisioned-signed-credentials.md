@@ -1,10 +1,11 @@
 ---
 description: >-
-  As an organization with a did:web ID you can issue single credentials or in
-  batches.
+  With our partner account you are able to sign credentials with your own keys!
+  It only requires you to set up an alias and to host your Decentralized
+  Identifier (DID).
 ---
 
-# Using did:web to (Batch) Issue Credentials
+# Key provisioned (signed credentials)
 
 **To get started you will need:**
 

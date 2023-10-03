@@ -28,7 +28,7 @@
   * [Manual Issuance](for-organizations/issuing-credentials/manual-issuance.md)
   * [Batch Issuance](for-organizations/issuing-credentials/batch-issuance.md)
 * [did:web for Organizations](for-organizations/did-web-for-organizations/README.md)
-  * [Using did:web to (Batch) Issue Credentials](for-organizations/did-web-for-organizations/using-did-web-to-batch-issue-credentials.md)
+  * [Key provisioned (signed credentials)](for-organizations/did-web-for-organizations/key-provisioned-signed-credentials.md)
 * [What's Next?](for-organizations/whats-next.md)
 
 ## For Builders

@@ -12,13 +12,7 @@ description: This page contains all relevant endpoints interacting with Disco Pr
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="DID" required="true" %}
-A decentralized identifier. This can be fetched from the URL of the Disco profile. It usually contains 
-
-`did:3`
-
- to start. An example: 
-
-`did:3:kjzl6cwe1jw149mq5riadts0nk6glwype5j2cnib0qobc9hju3ufqtmwi75lk96`
+A decentralized identifier. This can be fetched from the URL of the Disco profile. It usually contains `did:3` to start. An example: `did:3:kjzl6cwe1jw149mq5riadts0nk6glwype5j2cnib0qobc9hju3ufqtmwi75lk96`
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Successful Operation!" %}
@@ -71,9 +65,7 @@ Returns a Disco profile if it exists given its linked ETH Address. This only wor
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="address" required="true" %}
- Ethereum address, like 
-
-`0xABC1234567890`
+&#x20;Ethereum address, like `0xABC1234567890`
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Successful Operation" %}
@@ -255,4 +247,6 @@ handle of Account Linked to search for. This can be a twitter, discord, or domai
 
 {% endswagger-response %}
 {% endswagger %}
+
+
 

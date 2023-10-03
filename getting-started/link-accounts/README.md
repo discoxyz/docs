@@ -12,6 +12,7 @@ We currently support three different account types:
 
 * Twitter account
 * Discord handle
+* Lens handle
 * Domain or website\
 
 

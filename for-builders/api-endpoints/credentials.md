@@ -8,21 +8,11 @@ description: Here are all endpoints interacting with Disco Credentials
 
 {% swagger method="get" path="" baseUrl="https://api.disco.xyz/v1/profile/{did}/credentials" summary="Gets credentials by did." %}
 {% swagger-description %}
-Given a did, return all 
-
-_**public**_
-
- credentials belonging to that user
+Given a did, return all _**public**_ credentials belonging to that user
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="did" required="true" %}
-A decentralized identifier. This can be fetched from the URL of the Disco profile. It usually contains 
-
-`did:3`
-
- to start. An example: 
-
-`did:3:kjzl6cwe1jw149mq5riadts0nk6glwype5j2cnib0qobc9hju3ufqtmwi75lk96`
+A decentralized identifier. This can be fetched from the URL of the Disco profile. It usually contains `did:3` to start. An example: `did:3:kjzl6cwe1jw149mq5riadts0nk6glwype5j2cnib0qobc9hju3ufqtmwi75lk96`
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Successful Operation" %}
@@ -166,27 +156,15 @@ A decentralized identifier. This can be fetched from the URL of the Disco profil
 
 {% swagger method="get" path="" baseUrl="https://api.disco.xyz/v1/profile/{did}/credentials/byTypes?types={type} " summary="Get credentials by DID and type" %}
 {% swagger-description %}
-Given a did and credential type, return all 
-
-_**public**_
-
- credentials of that type belonging to that user.
+Given a did and credential type, return all _**public**_ credentials of that type belonging to that user.
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="did" required="true" %}
-A decentralized identifier. This can be fetched from the URL of the Disco profile. It usually contains 
-
-`did:3`
-
- to start. An example: 
-
-`did:3:kjzl6cwe1jw149mq5riadts0nk6glwype5j2cnib0qobc9hju3ufqtmwi75lk96`
+A decentralized identifier. This can be fetched from the URL of the Disco profile. It usually contains `did:3` to start. An example: `did:3:kjzl6cwe1jw149mq5riadts0nk6glwype5j2cnib0qobc9hju3ufqtmwi75lk96`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="type" type="String" required="true" %}
-schema type to search for: e.g: 
-
-`OfficialDisconautCredential, GMCredential.`
+schema type to search for: e.g: `OfficialDisconautCredential, GMCredential.`
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Successful Operation" %}
