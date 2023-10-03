@@ -18,6 +18,7 @@
 * [⚙ Link Accounts](getting-started/link-accounts/README.md)
   * [Link a Twitter Account](getting-started/link-accounts/link-a-twitter-account.md)
   * [Link a Discord handle](getting-started/link-accounts/link-a-discord-handle.md)
+  * [Link a Lens Handle](getting-started/link-accounts/link-a-lens-handle.md)
   * [Link a domain](getting-started/link-accounts/link-a-domain.md)
 * [📧 Sending a Credential](getting-started/sending-a-credential.md)
 
