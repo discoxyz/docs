@@ -37,9 +37,9 @@
 * [Requirements](for-builders/requirements.md)
 * [Generate an API Key](for-builders/generate-an-api-key.md)
 * [API Endpoints](for-builders/api-endpoints/README.md)
+  * [Credentials](for-builders/api-endpoints/credentials.md)
   * [Profiles](for-builders/api-endpoints/profiles/README.md)
     * [Use Case: Parsing out Account Linkages](for-builders/api-endpoints/profiles/use-case-parsing-out-account-linkages.md)
-  * [Credentials](for-builders/api-endpoints/credentials.md)
   * [Verify a Credential](for-builders/api-endpoints/verify-a-credential.md)
   * [Programmatic Issuance](for-builders/api-endpoints/programmatic-issuance.md)
 
