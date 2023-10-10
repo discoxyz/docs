@@ -1,9 +1,3 @@
----
-description: >-
-  We enable issuers like communities and developers to leverage a variety of
-  endpoints to Issue, Verify Credentials, and Retrieve Credentials.
----
-
 # API Endpoints
 
 ### Current Capabilities

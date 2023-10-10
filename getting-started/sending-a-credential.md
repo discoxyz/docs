@@ -2,7 +2,7 @@
 description: sending a cred
 ---
 
-# 📧 Sending a Credential
+# ✅ Sending a Credential
 
 Congratulations on setting up your Disco Data Backpack and receiving your Official Disconaut Credential! What's next? Time to issue your first Credential!
 

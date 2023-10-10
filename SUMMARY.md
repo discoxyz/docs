@@ -15,12 +15,12 @@
 
 * [🎒 Create a Data Backpack](getting-started/create-a-data-backpack.md)
 * [🧑🚀 Claiming your Official Disconaut Credential](getting-started/claiming-your-official-disconaut-credential.md)
-* [⚙ Link Accounts](getting-started/link-accounts/README.md)
+* [🔗 Link Accounts](getting-started/link-accounts/README.md)
   * [Link a Twitter Account](getting-started/link-accounts/link-a-twitter-account.md)
   * [Link a Discord handle](getting-started/link-accounts/link-a-discord-handle.md)
   * [Link a Lens Handle](getting-started/link-accounts/link-a-lens-handle.md)
   * [Link a domain](getting-started/link-accounts/link-a-domain.md)
-* [📧 Sending a Credential](getting-started/sending-a-credential.md)
+* [✅ Sending a Credential](getting-started/sending-a-credential.md)
 
 ## For Organizations
 
@@ -34,8 +34,15 @@
 
 ## For Builders
 
-* [Requirements](for-builders/requirements.md)
-* [Generate an API Key](for-builders/generate-an-api-key.md)
+* [🚀 Getting Started](for-builders/getting-started.md)
+* [🔐 Generate an API Key](for-builders/generate-an-api-key.md)
+* [⚙ Disco API](for-builders/disco-api/README.md)
+  * [Terminology](for-builders/disco-api/terminology.md)
+  * [Data Model](for-builders/disco-api/data-model.md)
+  * [Issuing Credentials](for-builders/disco-api/issuing-credentials.md)
+  * [Retrieving Credentials](for-builders/disco-api/retrieving-credentials.md)
+  * [User Persona](for-builders/disco-api/user-persona.md)
+  * [Search](for-builders/disco-api/search.md)
 * [API Endpoints](for-builders/api-endpoints/README.md)
   * [Credentials](for-builders/api-endpoints/credentials.md)
   * [Profiles](for-builders/api-endpoints/profiles/README.md)

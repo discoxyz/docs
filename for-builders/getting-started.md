@@ -2,7 +2,7 @@
 description: How do I get started building with Disco?
 ---
 
-# Requirements
+# 🚀 Getting Started
 
 ### Requirements
 
