@@ -4,26 +4,6 @@ description: This page contains all relevant endpoints interacting with Disco Pr
 
 # Profiles
 
-
-
-{% swagger method="get" path="" baseUrl="https://api.disco.xyz/v1/credentials/{did}" summary="Given a valid credentials, return Disco public credential" %}
-{% swagger-description %}
-POST /v1/credentials/multi and pass in the following in the body:
-
-`{`
-
-`dids: string[],`
-
-&#x20; `tab: "inbox" | "sent" | "public",`
-
-&#x20; `page: 1,`
-
-&#x20; `size: 0,`
-
-`}`
-{% endswagger-description %}
-{% endswagger %}
-
 ### Get Profile by DID&#x20;
 
 {% swagger method="get" path="  " baseUrl="https://api.disco.xyz/v1/profile/{DID}" summary="Given a valid DID, return Disco profile data." %}
@@ -81,7 +61,7 @@ A decentralized identifier. This can be fetched from the URL of the Disco profil
 
 {% swagger method="get" path="/address/{eth_address}" baseUrl="https://api.disco.xyz/v1/profile" summary="Get Profile via Ethereum address" %}
 {% swagger-description %}
-Returns a Disco profile if it exists given its linked ETH Address. This only works if you've created a data backpack at http://app.disco.xyz
+Returns a Disco profile if it exists given its linked ETH Address. This only works if you've created a data backpack at http://app.disco.xyz and linked your ETH address!
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="address" required="true" %}

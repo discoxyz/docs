@@ -17,7 +17,7 @@ layout:
 
 * **Decentralized Identifier (DID)** The Decentralized Identifiers (DIDs) is a new type of globally unique identifier designed to enable individuals and organizations to generate their own identifiers using systems they trust. DIDs enable entities to prove control over them by authenticating using cryptographic proofs such as digital signatures. A DID is a simple text string consisting of three parts:
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Anatomy of a DID</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Anatomy of a DID</p></figcaption></figure>
 
 * **DID Method** is the mechanism by which a particular type of DID and its associated DID document are created, resolved, updated, and deactivated. Disco supports `did:3`, `did:web` and `did:pkh.`
 * **Verifiable Credential** is a tamper-evident credential that has authorship that can be cryptographically verified. The claims in a credential can be about different Subjects.

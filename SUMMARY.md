@@ -29,7 +29,7 @@
   * [Manual Issuance](for-organizations/issuing-credentials/manual-issuance.md)
   * [Batch Issuance](for-organizations/issuing-credentials/batch-issuance.md)
 * [did:web for Organizations](for-organizations/did-web-for-organizations/README.md)
-  * [did:web for Orgs](for-organizations/did-web-for-organizations/did-web-for-orgs.md)
+  * [Key provisioned (signed credentials)](for-organizations/did-web-for-organizations/key-provisioned-signed-credentials.md)
 * [What's Next?](for-organizations/whats-next.md)
 
 ## For Builders
@@ -44,9 +44,9 @@
   * [User Persona](for-builders/disco-api/user-persona.md)
   * [Search](for-builders/disco-api/search.md)
 * [API Endpoints](for-builders/api-endpoints/README.md)
-  * [Credentials](for-builders/api-endpoints/credentials.md)
   * [Profiles](for-builders/api-endpoints/profiles/README.md)
     * [Use Case: Parsing out Account Linkages](for-builders/api-endpoints/profiles/use-case-parsing-out-account-linkages.md)
+  * [Credentials](for-builders/api-endpoints/credentials.md)
   * [Verify a Credential](for-builders/api-endpoints/verify-a-credential.md)
   * [Programmatic Issuance](for-builders/api-endpoints/programmatic-issuance.md)
 

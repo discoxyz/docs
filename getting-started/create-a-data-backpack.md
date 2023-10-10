@@ -44,7 +44,7 @@ Click the right arrows to proceed, and you'll be prompted to create a [DID](../l
 
 <div data-full-width="true">
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 </div>
 
