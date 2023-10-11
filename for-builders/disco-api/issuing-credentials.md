@@ -6,12 +6,12 @@ description: Issuing Verifiable Credentials
 
 ## Process Flow for Issuance
 
-<figure><img src="../../.gitbook/assets/Programatiacally issuance (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Programatiacally issuance (1).png" alt="" width="476"><figcaption></figcaption></figure>
 
 ## Single Credential Issuance
 
-{% swagger src="broken-reference" path="/v1/credential" method="post" expanded="true" %}
-[Broken file](broken-reference)
+{% swagger src="../../.gitbook/assets/swagger (1).json" path="/v1/credential" method="post" expanded="true" %}
+[swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
 ### Usage example
@@ -215,8 +215,8 @@ Successful Reply
 
 ## Batch Credential Issuance
 
-{% swagger src="broken-reference" path="/v1/credentials" method="post" expanded="true" %}
-[Broken file](broken-reference)
+{% swagger src="../../.gitbook/assets/swagger (1).json" path="/v1/credentials" method="post" expanded="true" %}
+[swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
 {% endswagger %}
 
 ### Usage example
