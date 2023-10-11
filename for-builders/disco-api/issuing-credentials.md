@@ -6,12 +6,12 @@ description: Issuing Verifiable Credentials
 
 ## Process Flow for Issuance
 
-<figure><img src="../../.gitbook/assets/Programatiacally issuance (1).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Programatiacally issuance (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Single Credential Issuance
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential" method="post" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
+{% swagger src="broken-reference" path="/v1/credential" method="post" expanded="true" %}
+[Broken file](broken-reference)
 {% endswagger %}
 
 ### Usage example
@@ -38,9 +38,44 @@ curl --location 'https://api.disco.xyz/v1/credential' \
 }'
 ```
 {% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Accept", "*/*");
+myHeaders.append("Authorization", "Bearer <your Disco API key>");
+
+var raw = JSON.stringify({
+  "issuer": "did:3:123abcexample",
+  "schemaUrl": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
+  "recipientDID": "did:3:456defexample",
+  "subjectData": {
+    "memberId": "123XYZ",
+    "membershipDescription": "Demo membership to showcase Disco API",
+    "membershipLevel": "Permanent",
+    "membershipType": "Developer",
+    "organization": "Disco.xyz"
+  },
+  "expirationDate": ""
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.disco.xyz/v1/credential", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
 {% endtabs %}
 
-Successful Reply:
+Successful Reply
 
 ```json
 {
@@ -180,8 +215,8 @@ Successful Reply:
 
 ## Batch Credential Issuance
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials" method="post" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
+{% swagger src="broken-reference" path="/v1/credentials" method="post" expanded="true" %}
+[Broken file](broken-reference)
 {% endswagger %}
 
 ### Usage example
@@ -216,9 +251,52 @@ curl --location 'https://api.disco.xyz/v1/credentials' \
 }'
 ```
 {% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Accept", "*/*");
+myHeaders.append("Authorization", "Bearer <your Disco API key>");
+
+var raw = JSON.stringify({
+  "issuer": "did:3:123abcexample",
+  "schema": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/GMCredential/1-0-0.json",
+  "suite": "jwt",
+  "subjects": [
+    {
+      "subject": {
+        "id": "did:3:456defexample"
+      },
+      "recipient": "did:3:456defexample",
+      "expirationDate": ""
+    },
+    {
+      "subject": {
+        "id": "did:3:789ghiexample"
+      },
+      "recipient": "did:3:789ghiexample",
+      "expirationDate": ""
+    }
+  ]
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.disco.xyz/v1/credentials", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
 {% endtabs %}
 
-Successful Reply:
+Successful Reply
 
 ```json
 [
@@ -292,54 +370,3 @@ Successful Reply:
     }
 ]
 ```
-
-## Retrieving Credentials
-
-A holder or organization can only retrieve private credentials if hey are a) t the Issuer or 2) the holder. Ownership is evaluated via holder's API Key.  Any holder can retrieve any public credentials held or issued regardless of ownership.
-
-GET v1/credential/https%3A%2F%2Fapi.disco.xyz%2Fcredential%2F3f929a36-8e1c-46c1-9981-120b43241c13
-
-/v1/credentials/multi
-
-## Count Credentials
-
-/v1/credentials/count
-
-```
-{
-  "dids": [
-    "did:3:kjzl6cwe1jw149lyliyfh4mbjgy59rhoktkhsoc7suu2trqje2wigrgea21bqy6", 
-    "did:3:kjzl6cwe1jw14b7xqq94oiy0lcnndgyt0p3vtlnsscpljosx6gom46qkxcv8sjb"
-  ]
-}
-```
-
-```json
-{
-    "inbox": 473,
-    "sent": 1457,
-    "public": 387,
-    "total": 1930
-}
-```
-
-get **v1/credentials/filter/type/:did**?types=DarkModePreferenceCredential
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

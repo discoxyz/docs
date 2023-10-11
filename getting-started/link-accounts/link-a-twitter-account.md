@@ -12,7 +12,7 @@ Click on **Sign** button to sign via your MetaMask to link your Twitter account 
 
 Follow the instructions to copy the tweet and post the Disco verification Tweet. This tweet creates a provable link between your identifier and your twitter account. In other words, by linking this Tweet, it proves you have custody of this account at the given time.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 4.  Once you've tweeted, click on **Confirm** to confirm this linkage.
 

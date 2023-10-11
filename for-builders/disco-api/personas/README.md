@@ -1,12 +1,12 @@
 ---
-description: This page contains all relevant endpoints interacting with Disco Profiles.
+description: This page contains all relevant endpoints interacting with Disco Personas.
 ---
 
-# Profiles
+# Personas
 
 ### Get Profile by DID&#x20;
 
-{% swagger method="get" path="  " baseUrl="https://api.disco.xyz/v1/profile/{DID}" summary="Given a valid DID, return Disco profile data." %}
+{% swagger expanded="true" method="get" path="  " baseUrl="https://api.disco.xyz/v1/profile/{DID}" summary="Given a valid DID, return Disco profile data." %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -59,7 +59,7 @@ A decentralized identifier. This can be fetched from the URL of the Disco profil
 
 ### Get Profile by Ethereum address
 
-{% swagger method="get" path="/address/{eth_address}" baseUrl="https://api.disco.xyz/v1/profile" summary="Get Profile via Ethereum address" %}
+{% swagger method="get" path="/address/{eth_address}" baseUrl="https://api.disco.xyz/v1/profile" summary="Get Profile via Ethereum address" expanded="true" %}
 {% swagger-description %}
 Returns a Disco profile if it exists given its linked ETH Address. This only works if you've created a data backpack at http://app.disco.xyz and linked your ETH address!
 {% endswagger-description %}
@@ -216,9 +216,11 @@ Returns a Disco profile if it exists given its linked ETH Address. This only wor
 
 ### Search for Profile by account linkages
 
-{% swagger method="get" path="" baseUrl="https://api.disco.xyz/v1/search/?handle=provenauthority" summary="Search by any handle" expanded="false" %}
-{% swagger-description %}
 Returns DIDs of matching handles given search input. Can search for Twitter, Discord, or Domain handle in one endpoint.
+
+{% swagger method="get" path="" baseUrl="https://api.disco.xyz/v1/search/?handle=provenauthority" summary="Search by any handle" expanded="true" %}
+{% swagger-description %}
+
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="handle" type="String" %}
@@ -247,6 +249,3 @@ handle of Account Linked to search for. This can be a twitter, discord, or domai
 
 {% endswagger-response %}
 {% endswagger %}
-
-
-

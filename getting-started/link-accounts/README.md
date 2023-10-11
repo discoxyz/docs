@@ -2,7 +2,7 @@
 description: This page will show you how to link your accounts
 ---
 
-# 🔗 Link Accounts
+# ⚙ Link Accounts
 
 ### Overview
 

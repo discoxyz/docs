@@ -15,12 +15,12 @@
 
 * [🎒 Create a Data Backpack](getting-started/create-a-data-backpack.md)
 * [🧑🚀 Claiming your Official Disconaut Credential](getting-started/claiming-your-official-disconaut-credential.md)
-* [🔗 Link Accounts](getting-started/link-accounts/README.md)
+* [⚙ Link Accounts](getting-started/link-accounts/README.md)
   * [Link a Twitter Account](getting-started/link-accounts/link-a-twitter-account.md)
   * [Link a Discord handle](getting-started/link-accounts/link-a-discord-handle.md)
   * [Link a Lens Handle](getting-started/link-accounts/link-a-lens-handle.md)
   * [Link a domain](getting-started/link-accounts/link-a-domain.md)
-* [✅ Sending a Credential](getting-started/sending-a-credential.md)
+* [📧 Sending a Credential](getting-started/sending-a-credential.md)
 
 ## For Organizations
 
@@ -29,25 +29,23 @@
   * [Manual Issuance](for-organizations/issuing-credentials/manual-issuance.md)
   * [Batch Issuance](for-organizations/issuing-credentials/batch-issuance.md)
 * [did:web for Organizations](for-organizations/did-web-for-organizations/README.md)
-  * [Key provisioned (signed credentials)](for-organizations/did-web-for-organizations/key-provisioned-signed-credentials.md)
+  * [did:web for Orgs](for-organizations/did-web-for-organizations/did-web-for-orgs.md)
 * [What's Next?](for-organizations/whats-next.md)
 
 ## For Builders
 
-* [🚀 Getting Started](for-builders/getting-started.md)
-* [🔐 Generate an API Key](for-builders/generate-an-api-key.md)
+* [Requirements](for-builders/requirements.md)
+* [Generate an API Key](for-builders/generate-an-api-key.md)
 * [⚙ Disco API](for-builders/disco-api/README.md)
   * [Terminology](for-builders/disco-api/terminology.md)
   * [Data Model](for-builders/disco-api/data-model.md)
   * [Issuing Credentials](for-builders/disco-api/issuing-credentials.md)
   * [Retrieving Credentials](for-builders/disco-api/retrieving-credentials.md)
-  * [User Persona](for-builders/disco-api/user-persona.md)
-  * [Search](for-builders/disco-api/search.md)
+  * [Verify a Credential](for-builders/disco-api/verify-a-credential.md)
+  * [Personas](for-builders/disco-api/personas/README.md)
+    * [Use Case: Parsing out Account Linkages](for-builders/disco-api/personas/use-case-parsing-out-account-linkages.md)
 * [API Endpoints](for-builders/api-endpoints/README.md)
-  * [Profiles](for-builders/api-endpoints/profiles/README.md)
-    * [Use Case: Parsing out Account Linkages](for-builders/api-endpoints/profiles/use-case-parsing-out-account-linkages.md)
   * [Credentials](for-builders/api-endpoints/credentials.md)
-  * [Verify a Credential](for-builders/api-endpoints/verify-a-credential.md)
   * [Programmatic Issuance](for-builders/api-endpoints/programmatic-issuance.md)
 
 ## Integrations

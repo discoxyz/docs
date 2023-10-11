@@ -304,12 +304,3 @@ schema type to search for: e.g: `OfficialDisconautCredential, GMCredential.`
 {% endswagger-response %}
 {% endswagger %}
 
-### Search by user handle
-
-{% swagger src="../../.gitbook/assets/swagger api doc.json" path="/v1/search" method="get" expanded="false" %}
-[swagger api doc.json](<../../.gitbook/assets/swagger api doc.json>)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/swagger 2.json" path="/v1/profile/{did}/credentials/byTypes" method="get" %}
-[swagger 2.json](<../../.gitbook/assets/swagger 2.json>)
-{% endswagger %}

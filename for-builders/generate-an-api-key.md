@@ -1,4 +1,4 @@
-# 🔐 Generate an API Key
+# Generate an API Key
 
 ## Generate an API Key
 
@@ -20,6 +20,3 @@ You can use this dashboard to manage and delete existing keys as well as create 
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-06-28 at 11.16.37 AM.png" alt=""><figcaption><p>Manage your existing API keys</p></figcaption></figure>
 
-## did:web API Keys
-
-To obtain a did:web DID and API key for an organization see [did-web-for-organizations](../for-organizations/did-web-for-organizations/ "mention")
