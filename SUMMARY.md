@@ -36,7 +36,7 @@
 
 * [Requirements](for-builders/requirements.md)
 * [Generate an API Key](for-builders/generate-an-api-key.md)
-* [Terminology](for-builders/terminology.md)
+* [Glossary](for-builders/glossary.md)
 * [Data Model](for-builders/data-model.md)
 * [⚙ Disco API](for-builders/disco-api/README.md)
   * [Issuing Credentials](for-builders/disco-api/issuing-credentials.md)

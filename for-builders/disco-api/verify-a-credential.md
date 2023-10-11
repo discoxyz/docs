@@ -29,8 +29,6 @@ Reminder that JWT (JSON Web Tokens) can be decoded using something like [https:/
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
-###
-
 ### Usage example
 
 {% tabs %}
@@ -74,7 +72,7 @@ fetch("https://api.disco.xyz/v1/credential/verify", requestOptions)
 {% endtab %}
 {% endtabs %}
 
-Return on successful call:
+### Successful Response
 
 ```json
 true

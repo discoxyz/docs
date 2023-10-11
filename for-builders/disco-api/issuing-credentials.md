@@ -75,7 +75,7 @@ fetch("https://api.disco.xyz/v1/credential", requestOptions)
 {% endtab %}
 {% endtabs %}
 
-Successful Reply
+### Successful Response
 
 ```json
 {
@@ -296,7 +296,7 @@ fetch("https://api.disco.xyz/v1/credentials", requestOptions)
 {% endtab %}
 {% endtabs %}
 
-Successful Reply
+### Successful Response
 
 ```json
 [
