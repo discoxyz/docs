@@ -6,4 +6,4 @@ description: Introduction
 
 Disco's ecosystem is build around our Verifiable Data Registry.  Our Verifiable Data Registry offers safe storage and management of user's and their identities.  All the complexity of managing identities and credentials is handled by Disco's platform.  We provide easy-to-use UI for individual users and APIs for organizations and developers alike in our community.&#x20;
 
-<figure><img src="../../.gitbook/assets/Disco Ecosystem - light mode (2).png" alt=""><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/Verifiable Credentials - dark mode (2).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/Disco Ecosystem - light mode (2).png" alt=""></picture><figcaption></figcaption></figure>

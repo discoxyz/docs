@@ -10,7 +10,7 @@ A `User` on the Disco platform is the holder and owner of its own identity. A `U
 
 A `Persona` is a set of attributes that describes a `User` in a particular context. Currently Disco supports one `Persona` per `User` (extendable to N `Personas` per `User` in future releases).  A `Persona` may have multiple DIDs and account `Linkages` assigned.&#x20;
 
-<figure><img src="../../.gitbook/assets/User Data Model - light mode.png" alt="" width="349"><figcaption></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/User Data Model - dark mode (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/User Data Model - light mode.png" alt="" width="349"></picture><figcaption></figcaption></figure>
 
 An example of a `User` document:
 

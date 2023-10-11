@@ -1,10 +1,19 @@
 ---
-description: This page shows you how to verify a credential using the Disco API
+description: How to verify a credential using the Disco API
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Verify a Credential
-
-### Verify a Credential
 
 {% hint style="success" %}
 **Why verify a credential?**\
@@ -12,19 +21,15 @@ description: This page shows you how to verify a credential using the Disco API
 We can verify a credential to check that the statement is valid, the attestation + signature has not been tampered with, it is still valid, and has not been revoked.
 {% endhint %}
 
-The following is a API endpoint for you to verify your credential.
-
 If you'd like to use a library to self-verify a credential in your app without relying on Disco as a central authority, [here](https://gist.github.com/aldigjo/41a20d8fced39d4c47e7ac088f0c35c0) is a snippet. \
 \
 Reminder that JWT (JSON Web Tokens) can be decoded using something like [https://jwt.io/](https://jwt.io/).
 
-
-
-**API Endpoint**&#x20;
-
 {% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/verify" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
+
+###
 
 ### Usage example
 
@@ -36,9 +41,41 @@ curl --location 'https://api.disco.xyz/v1/credential/verify' \
 --header 'Content-Type: application/json' \
 --header 'Accept: */*' \
 --header 'Authorization: Bearer b499e2ff-92a9-49b3-b4f7-e7cf756b7b5d' \
---data-raw '{vc:"{\"@context\":[\"https://www.w3.org/2018/credentials/v1\"],\"type\":[\"VerifiableCredential\",\"MembershipCredential\"],\"issuer\":{\"id\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt\"},\"issuanceDate\":\"2023-09-19T13:12:14.801Z\",\"id\":\"https://api.disco.xyz/credential/22d9187b-8a33-4e17-b05f-c8192107ab28\",\"credentialSubject\":{\"id\":\"did:ethr:0x08936438bfb8e9b269f978d5327ad684f47f8c05\",\"organization\":\"House of Leroy\"},\"expirationDate\":\"2024-08-29T00:00:00.000Z\",\"credentialSchema\":{\"id\":\"https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json\",\"type\":\"JsonSchemaValidator2018\"},\"proof\":{\"verificationMethod\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt#controller\",\"created\":\"2023-09-19T13:12:14.827Z\",\"proofPurpose\":\"assertionMethod\",\"type\":\"EthereumEip712Signature2021\",\"proofValue\":\"0x3aa89255fe63d7ca70c43b0603aa3d004978bc0815b35ae5dcbf84a3df4867f133b6f0d717916cf84b8f6b3dcbf6a7643f18fa00557c0ddb5f5571cc8f678d291c\",\"eip712Domain\":{\"domain\":{\"chainId\":1,\"name\":\"Disco Verifiable Credential\",\"version\":\"1\"},\"messageSchema\":{\"EIP712Domain\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"version\",\"type\":\"string\"},{\"name\":\"chainId\",\"type\":\"uint256\"}],\"Proof\":[{\"name\":\"created\",\"type\":\"string\"},{\"name\":\"proofPurpose\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"verificationMethod\",\"type\":\"string\"}],\"Issuer\":[{\"name\":\"id\",\"type\":\"string\"}],\"CredentialSubject\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"organization\",\"type\":\"string\"}],\"VerifiableCredential\":[{\"name\":\"@context\",\"type\":\"string[]\"},{\"name\":\"credentialSubject\",\"type\":\"CredentialSubject\"},{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"issuanceDate\",\"type\":\"string\"},{\"name\":\"issuer\",\"type\":\"Issuer\"},{\"name\":\"proof\",\"type\":\"Proof\"},{\"name\":\"type\",\"type\":\"string[]\"}]},\"primaryType\":\"VerifiableCredential\"}}}"
+--data-raw '{
+    "vc": "{\"_id\":{\"$oid\":\"64f7952756aa629274bfbfce\"},\"vc\":{\"@context\":[\"https://www.w3.org/2018/credentials/v1\"],\"id\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt#b868f1fb-c6ab-402c-9710-bb5db331fcd3\",\"type\":[\"VerifiableCredential\",\"OrganizationCredential\"],\"proof\":{\"type\":\"EthereumEip712Signature2021\",\"created\":\"2022-11-16T17:14:29.713Z\",\"proofValue\":\"0x9e38337b93f6564db69b386a36cb7c22aa90c79facb48ba309f33e1d4030133d12ce5e3c035da34dfd8fa57ebec389db5f8331f4ccf3726433ef696d57642a241b\",\"eip712Domain\":{\"domain\":{\"name\":\"\",\"chainId\":1,\"version\":\"1\"},\"primaryType\":\"VerifiableCredential\",\"messageSchema\":{\"Proof\":[{\"name\":\"created\",\"type\":\"string\"},{\"name\":\"proofPurpose\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"verificationMethod\",\"type\":\"string\"}],\"Issuer\":[{\"name\":\"id\",\"type\":\"string\"}],\"EIP712Domain\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"version\",\"type\":\"string\"},{\"name\":\"chainId\",\"type\":\"uint256\"}],\"CredentialSchema\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"}],\"CredentialSubject\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"organizationName\",\"type\":\"string\"}],\"VerifiableCredential\":[{\"name\":\"@context\",\"type\":\"string[]\"},{\"name\":\"credentialSchema\",\"type\":\"CredentialSchema\"},{\"name\":\"credentialSubject\",\"type\":\"CredentialSubject\"},{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"issuanceDate\",\"type\":\"string\"},{\"name\":\"issuer\",\"type\":\"Issuer\"},{\"name\":\"proof\",\"type\":\"Proof\"},{\"name\":\"type\",\"type\":\"string[]\"}]}},\"proofPurpose\":\"assertionMethod\",\"verificationMethod\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt#controller\"},\"issuer\":{\"id\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt\"},\"issuanceDate\":\"2022-11-16T17:14:22.786Z\",\"credentialSchema\":{\"id\":\"https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OrganizationCredential/1-0-0.json\",\"type\":\"JsonSchemaValidator2018\"},\"credentialSubject\":{\"id\":\"did:3:kjzl6cwe1jw14628704ob0iovstsmic2q9pu3xthi7t4yaywzrcvcrv3o41j06m\",\"organizationName\":\"Crumpet Capital\"}},\"genId\":\"77c8759b-ac29-4b25-8ac4-36ae0acf6a61\",\"isPublic\":true,\"isDeleted\":false,\"issuer\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt\",\"recipient\":\"did:3:kjzl6cwe1jw14628704ob0iovstsmic2q9pu3xthi7t4yaywzrcvcrv3o41j06m\",\"subject\":\"did:3:kjzl6cwe1jw14628704ob0iovstsmic2q9pu3xthi7t4yaywzrcvcrv3o41j06m\",\"updatedAt\":null,\"jwt\":\"\",\"schema\":\"https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OrganizationCredential/1-0-0.json\",\"history\":[\"Migrated from ceramic public tile on 2023-09-05T20:52:55.370Z\"]}"
 }'
 ```
 {% endcode %}
 {% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Accept", "*/*");
+myHeaders.append("Authorization", "Bearer b499e2ff-92a9-49b3-b4f7-e7cf756b7b5d");
+
+var raw = JSON.stringify({
+  "vc": "{\"_id\":{\"$oid\":\"64f7952756aa629274bfbfce\"},\"vc\":{\"@context\":[\"https://www.w3.org/2018/credentials/v1\"],\"id\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt#b868f1fb-c6ab-402c-9710-bb5db331fcd3\",\"type\":[\"VerifiableCredential\",\"OrganizationCredential\"],\"proof\":{\"type\":\"EthereumEip712Signature2021\",\"created\":\"2022-11-16T17:14:29.713Z\",\"proofValue\":\"0x9e38337b93f6564db69b386a36cb7c22aa90c79facb48ba309f33e1d4030133d12ce5e3c035da34dfd8fa57ebec389db5f8331f4ccf3726433ef696d57642a241b\",\"eip712Domain\":{\"domain\":{\"name\":\"\",\"chainId\":1,\"version\":\"1\"},\"primaryType\":\"VerifiableCredential\",\"messageSchema\":{\"Proof\":[{\"name\":\"created\",\"type\":\"string\"},{\"name\":\"proofPurpose\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"verificationMethod\",\"type\":\"string\"}],\"Issuer\":[{\"name\":\"id\",\"type\":\"string\"}],\"EIP712Domain\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"version\",\"type\":\"string\"},{\"name\":\"chainId\",\"type\":\"uint256\"}],\"CredentialSchema\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"}],\"CredentialSubject\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"organizationName\",\"type\":\"string\"}],\"VerifiableCredential\":[{\"name\":\"@context\",\"type\":\"string[]\"},{\"name\":\"credentialSchema\",\"type\":\"CredentialSchema\"},{\"name\":\"credentialSubject\",\"type\":\"CredentialSubject\"},{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"issuanceDate\",\"type\":\"string\"},{\"name\":\"issuer\",\"type\":\"Issuer\"},{\"name\":\"proof\",\"type\":\"Proof\"},{\"name\":\"type\",\"type\":\"string[]\"}]}},\"proofPurpose\":\"assertionMethod\",\"verificationMethod\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt#controller\"},\"issuer\":{\"id\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt\"},\"issuanceDate\":\"2022-11-16T17:14:22.786Z\",\"credentialSchema\":{\"id\":\"https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OrganizationCredential/1-0-0.json\",\"type\":\"JsonSchemaValidator2018\"},\"credentialSubject\":{\"id\":\"did:3:kjzl6cwe1jw14628704ob0iovstsmic2q9pu3xthi7t4yaywzrcvcrv3o41j06m\",\"organizationName\":\"Crumpet Capital\"}},\"genId\":\"77c8759b-ac29-4b25-8ac4-36ae0acf6a61\",\"isPublic\":true,\"isDeleted\":false,\"issuer\":\"did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt\",\"recipient\":\"did:3:kjzl6cwe1jw14628704ob0iovstsmic2q9pu3xthi7t4yaywzrcvcrv3o41j06m\",\"subject\":\"did:3:kjzl6cwe1jw14628704ob0iovstsmic2q9pu3xthi7t4yaywzrcvcrv3o41j06m\",\"updatedAt\":null,\"jwt\":\"\",\"schema\":\"https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/OrganizationCredential/1-0-0.json\",\"history\":[\"Migrated from ceramic public tile on 2023-09-05T20:52:55.370Z\"]}"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.disco.xyz/v1/credential/verify", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
 {% endtabs %}
+
+Return on successful call:
+
+```json
+true
+```
