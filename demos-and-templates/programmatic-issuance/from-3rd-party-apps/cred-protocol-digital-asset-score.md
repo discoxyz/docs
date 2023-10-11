@@ -9,7 +9,7 @@ The [Cred Protocol ](https://www.credprotocol.com/)Digital Asset Score Demo is a
 ### **How it works:**
 
 1. The next.js application interacts with the Cred Protocol API to request the digital asset score for a specific account.
-2. Upon receiving the score data, the app makes a request to Disco's API to do [programmatic-issuance.md](../../../for-builders/api-endpoints/programmatic-issuance.md "mention").
+2. Upon receiving the score data, the app makes a request to Disco's API to do [Broken link](broken-reference "mention").
 3. Credential is waiting in the user's backpack! They can go to http://app.disco.xyz to make it public.
 
 ### **Links/Resources:**&#x20;
