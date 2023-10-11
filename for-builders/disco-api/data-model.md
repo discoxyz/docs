@@ -10,7 +10,7 @@ A `User` on the Disco platform is the holder and owner of its own identity. A `U
 
 A `Persona` is a set of attributes that describes a `User` in a particular context. Currently Disco supports one `Persona` per `User` (extendable to N `Personas` per `User` in future releases).  A `Persona` may have multiple DIDs and account `Linkages` assigned.&#x20;
 
-<picture><source srcset="broken-reference" media="(prefers-color-scheme: dark)"><img src="broken-reference" alt=""></picture>
+<figure><img src="../../.gitbook/assets/User Data Model - light mode.png" alt="" width="349"><figcaption></figcaption></figure>
 
 An example of a `User` document:
 
@@ -63,7 +63,7 @@ An example of a `User` document:
 
 A `Verifiable Credential` (aka  `Credential`) is a set of one or more (tamper-evident) claims made by someone or something. `Credentials` includes an identifier and properties such as `issuer`, `type`, `subject`, `issuance date`.  The credential claim is assigned a `proof` in that it's cryptographically signed by the `issuer` (who may or may not be the owner of the signing key).
 
-<figure><picture><source srcset="broken-reference" media="(prefers-color-scheme: dark)"><img src="broken-reference" alt=""></picture><figcaption><p>Verifiable Credential Overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Verifiable Credentials - dark mode.png" alt=""><figcaption></figcaption></figure>
 
 An example of a `Verifiable Credential` document:
 
