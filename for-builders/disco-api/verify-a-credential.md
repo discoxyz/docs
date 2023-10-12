@@ -25,6 +25,10 @@ If you'd like to use a library to self-verify a credential in your app without r
 \
 Reminder that JWT (JSON Web Tokens) can be decoded using something like [https://jwt.io/](https://jwt.io/).
 
+Credential Verification Flow
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-12 at 10.38.02 AM.png" alt=""><figcaption><p>Credential Verification Flow</p></figcaption></figure>
+
 {% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/verify" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
@@ -77,3 +81,4 @@ fetch("https://api.disco.xyz/v1/credential/verify", requestOptions)
 ```json
 true
 ```
+
