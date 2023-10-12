@@ -10,8 +10,8 @@ description: Issuing Verifiable Credentials
 
 ## Single Credential Issuance
 
-{% swagger src="../../.gitbook/assets/swagger (1).json" path="/v1/credential" method="post" expanded="true" %}
-[swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential" method="post" expanded="true" %}
+[swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
 ### Usage example
@@ -215,8 +215,8 @@ fetch("https://api.disco.xyz/v1/credential", requestOptions)
 
 ## Batch Credential Issuance
 
-{% swagger src="../../.gitbook/assets/swagger (1).json" path="/v1/credentials" method="post" expanded="true" %}
-[swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials" method="post" expanded="true" %}
+[swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
 ### Usage example

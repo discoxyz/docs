@@ -23,7 +23,7 @@ Access to credentials is based on API key ownership:
 
 ## Get a Credential based on its ID
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" expanded="true" %}
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
@@ -200,7 +200,7 @@ fetch("https://api.disco.xyz/v1/credential/https%3A%2F%2Fapi.disco.xyz%2Fcredent
 
 ## Get multiple Credentials for a single DID&#x20;
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/{did}" method="get" expanded="true" %}
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/{did}" method="get" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
@@ -319,7 +319,7 @@ fetch("https://api.disco.xyz/v1/credentials/did:3:kjzl6cwe1jw149lyliyfh4mbjgy59r
 
 ## Get multiple Credentials for multiple DIDs&#x20;
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/multi" method="post" expanded="true" %}
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/multi" method="post" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
@@ -553,8 +553,8 @@ fetch("https://api.disco.xyz/v1/credentials/multi", requestOptions)
 
 Refer to the [credential model](../data-model.md) for available search fields&#x20;
 
-{% swagger src="../../.gitbook/assets/swagger (1).json" path="/v1/credentials/search" method="get" %}
-[swagger (1).json](<../../.gitbook/assets/swagger (1).json>)
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/search" method="get" expanded="true" %}
+[swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
 {% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/search" method="post" expanded="true" %}

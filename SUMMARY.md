@@ -42,8 +42,7 @@
   * [Issuing Credentials](for-builders/disco-api/issuing-credentials.md)
   * [Retrieving Credentials](for-builders/disco-api/retrieving-credentials.md)
   * [Verify a Credential](for-builders/disco-api/verify-a-credential.md)
-  * [Personas](for-builders/disco-api/personas/README.md)
-    * [Use Case: Parsing out Account Linkages](for-builders/disco-api/personas/use-case-parsing-out-account-linkages.md)
+  * [Personas](for-builders/disco-api/personas.md)
 
 ## Integrations
 
