@@ -7,7 +7,7 @@ Once we have these Verifiable Credentials in our backpack, we can verify them wi
 Due to the decentralized nature of these credentials, they can be verified by anyone, anywhere.&#x20;
 
 {% hint style="info" %}
-Verification can be done using our [API endpoint](../../for-builders/disco-api/verify-a-credential.md), or manually like in this [code snippet](https://gist.github.com/aldigjo/41a20d8fced39d4c47e7ac088f0c35c0) without relying on Disco as the central authority.
+Verification can be done using our [API endpoint](../../for-builders/disco-apis/verify-a-credential.md), or manually like in this [code snippet](https://gist.github.com/aldigjo/41a20d8fced39d4c47e7ac088f0c35c0) without relying on Disco as the central authority.
 {% endhint %}
 
 Here are some examples of integrations with Disco where we verify the VC, which unlocks a subsequent flow.&#x20;

@@ -38,11 +38,14 @@
 * [Generate an API Key](for-builders/generate-an-api-key.md)
 * [Glossary](for-builders/glossary.md)
 * [Data Model](for-builders/data-model.md)
-* [⚙ Disco API](for-builders/disco-api/README.md)
-  * [Issuing Credentials](for-builders/disco-api/issuing-credentials.md)
-  * [Retrieving Credentials](for-builders/disco-api/retrieving-credentials.md)
-  * [Verify a Credential](for-builders/disco-api/verify-a-credential.md)
-  * [Personas](for-builders/disco-api/personas.md)
+* [⚙ Disco APIs](for-builders/disco-apis/README.md)
+  * [Issuing Credentials](for-builders/disco-apis/issuing-credentials.md)
+  * [Retrieving Credentials](for-builders/disco-apis/retrieving-credentials.md)
+  * [Verify a Credential](for-builders/disco-apis/verify-a-credential.md)
+  * [Personas](for-builders/disco-apis/personas.md)
+* [⚙ Disco SDKs](for-builders/disco-sdks/README.md)
+  * [Selective Disclosure](for-builders/disco-sdks/selective-disclosure/README.md)
+    * [@discoxyz/selective-disclosure (alpha)](for-builders/disco-sdks/selective-disclosure/discoxyz-selective-disclosure-alpha.md)
 
 ## Integrations
 
