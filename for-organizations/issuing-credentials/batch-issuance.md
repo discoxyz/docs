@@ -32,4 +32,8 @@ Fill out any relevant fields, and Choose your CSV file you'd like to upload.
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2023-05-31 at 12.51.20 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
+Ensure you include only one DID (or Eth Address) on each line in your CSV file. Also, make sure there's a "new line" after the last entry in your CSV file. For example:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-10-17 at 3.52.41 PM.png" alt=""><figcaption><p>CSV Example</p></figcaption></figure>
+
 Once you’ve uploaded your CSV or put in the recipients manually, the DIDs will populate and you can click on **Issue** to fire them off. Congrats!
