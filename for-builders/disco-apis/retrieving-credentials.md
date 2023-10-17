@@ -23,7 +23,7 @@ Access to credentials is based on API key ownership:
 
 ## Get a Credential based on its ID
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" %}
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
@@ -200,7 +200,7 @@ fetch("https://api.disco.xyz/v1/credential/https%3A%2F%2Fapi.disco.xyz%2Fcredent
 
 ## Get multiple Credentials for a single DID&#x20;
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/{did}" method="get" %}
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/{did}" method="get" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
@@ -319,7 +319,7 @@ fetch("https://api.disco.xyz/v1/credentials/did:3:kjzl6cwe1jw149lyliyfh4mbjgy59r
 
 ## Get multiple Credentials for multiple DIDs&#x20;
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/multi" method="post" %}
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credentials/multi" method="post" expanded="true" %}
 [swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
@@ -862,3 +862,91 @@ fetch("https://api.disco.xyz/v1/credentials/filter/type/did:3:kjzl6cwe1jw149lyli
     }
 ]
 ```
+
+## Filter a type of Credential for an Ethereum Address
+
+{% swagger src="../../.gitbook/assets/swagger_temp.json" path="/v1/credentials/filter/type/eth/{eth}" method="get" expanded="true" %}
+[swagger_temp.json](../../.gitbook/assets/swagger_temp.json)
+{% endswagger %}
+
+### Usage example
+
+{% tabs %}
+{% tab title="Curl" %}
+{% code overflow="wrap" %}
+```bash
+curl --location 'https://sqy1eg2wgc.execute-api.us-east-1.amazonaws.com/v1/credentials/filter/type/eth/0x08936438bfb8e9B269F978D5327Ad684f47F8C05?types=MembershipCredential' \
+--header 'Authorization: Bearer <your Disco API key>'
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="JavaScript" %}
+{% code overflow="wrap" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer <your Disco API key>");
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://sqy1eg2wgc.execute-api.us-east-1.amazonaws.com/v1/credentials/filter/type/eth/0x08936438bfb8e9B269F978D5327Ad684f47F8C05?types=MembershipCredential", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
+### Successful Response
+
+```json
+[
+    {
+        "_id": "64fb5e63fb562686ec95fbc8",
+        "vc": {
+            "@context": [
+                "https://www.w3.org/2018/credentials/v1"
+            ],
+            "id": "did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt#f9080074-cf35-4c14-91e9-e0467132b114",
+            "type": [
+                "VerifiableCredential",
+                "MembershipCredential"
+            ],
+            "proof": {
+                "jwt": "eyJraWQiOiJkaWQ6MzpranpsNmN3ZTFqdzE0YTd1OXN4M3RoeDlnZzl1aDd1NXRxamt6Y25yNXBpNXp6a2FwN2tpenRnc2ZoemF5enQ_dmVyc2lvbi1pZD0wI3BhRGp4Q2VnQjZaeU02SiIsImFsZyI6IkVTMjU2SyJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJjcmVkZW50aWFsU2NoZW1hIjp7ImlkIjoiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Rpc2NveHl6L2Rpc2NvLXNjaGVtYXMvbWFpbi9qc29uL01lbWJlcnNoaXBDcmVkZW50aWFsLzEtMC0wLmpzb24iLCJ0eXBlIjoiSnNvblNjaGVtYVZhbGlkYXRvcjIwMTgifSwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJkaWQ6MzpranpsNmN3ZTFqdzE0OWx5bGl5Zmg0bWJqZ3k1OXJob2t0a2hzb2M3c3V1MnRycWplMndpZ3JnZWEyMWJxeTYiLCJvcmdhbml6YXRpb24iOiJEaXNjbyJ9LCJpZCI6ImRpZDozOmtqemw2Y3dlMWp3MTRhN3U5c3gzdGh4OWdnOXVoN3U1dHFqa3pjbnI1cGk1enprYXA3a2l6dGdzZmh6YXl6dCNmOTA4MDA3NC1jZjM1LTRjMTQtOTFlOS1lMDQ2NzEzMmIxMTQiLCJpc3MiOiJkaWQ6MzpranpsNmN3ZTFqdzE0YTd1OXN4M3RoeDlnZzl1aDd1NXRxamt6Y25yNXBpNXp6a2FwN2tpenRnc2ZoemF5enQiLCJpc3N1YW5jZURhdGUiOiIyMDIzLTAzLTMwVDE1OjMzOjA0LjI0N1oiLCJpc3N1ZXIiOnsiaWQiOiJkaWQ6MzpranpsNmN3ZTFqdzE0YTd1OXN4M3RoeDlnZzl1aDd1NXRxamt6Y25yNXBpNXp6a2FwN2tpenRnc2ZoemF5enQifSwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCIsIk1lbWJlcnNoaXBDcmVkZW50aWFsIl19.3LNzn7Tr2QcXbS0WHSBDM--nf88fgD5gSz0GqsbYaVzYwB4O_dEKpdDEfE7vK-Y-cVMTnxSU2ya5FCSveEo2Ew"
+            },
+            "issuer": {
+                "id": "did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt"
+            },
+            "issuanceDate": "2023-03-30T15:33:04.247Z",
+            "credentialSchema": {
+                "id": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
+                "type": "JsonSchemaValidator2018"
+            },
+            "credentialSubject": {
+                "id": "did:3:kjzl6cwe1jw149lyliyfh4mbjgy59rhoktkhsoc7suu2trqje2wigrgea21bqy6",
+                "organization": "Disco"
+            },
+            "keyHash": "0x08936438bfb8e9b269f978d5327ad684f47f8c05"
+        },
+        "genId": "13978ff3-ad70-4a81-847d-d4373b066746",
+        "isPublic": true,
+        "isDeleted": false,
+        "issuer": "did:3:kjzl6cwe1jw14a7u9sx3thx9gg9uh7u5tqjkzcnr5pi5zzkap7kiztgsfhzayzt",
+        "recipient": "did:3:kjzl6cwe1jw149lyliyfh4mbjgy59rhoktkhsoc7suu2trqje2wigrgea21bqy6",
+        "subject": "did:3:kjzl6cwe1jw149lyliyfh4mbjgy59rhoktkhsoc7suu2trqje2wigrgea21bqy6",
+        "updatedAt": "2023-03-30T15:33:04.247Z",
+        "jwt": "eyJraWQiOiJkaWQ6MzpranpsNmN3ZTFqdzE0YTd1OXN4M3RoeDlnZzl1aDd1NXRxamt6Y25yNXBpNXp6a2FwN2tpenRnc2ZoemF5enQ_dmVyc2lvbi1pZD0wI3BhRGp4Q2VnQjZaeU02SiIsImFsZyI6IkVTMjU2SyJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJjcmVkZW50aWFsU2NoZW1hIjp7ImlkIjoiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Rpc2NveHl6L2Rpc2NvLXNjaGVtYXMvbWFpbi9qc29uL01lbWJlcnNoaXBDcmVkZW50aWFsLzEtMC0wLmpzb24iLCJ0eXBlIjoiSnNvblNjaGVtYVZhbGlkYXRvcjIwMTgifSwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJkaWQ6MzpranpsNmN3ZTFqdzE0OWx5bGl5Zmg0bWJqZ3k1OXJob2t0a2hzb2M3c3V1MnRycWplMndpZ3JnZWEyMWJxeTYiLCJvcmdhbml6YXRpb24iOiJEaXNjbyJ9LCJpZCI6ImRpZDozOmtqemw2Y3dlMWp3MTRhN3U5c3gzdGh4OWdnOXVoN3U1dHFqa3pjbnI1cGk1enprYXA3a2l6dGdzZmh6YXl6dCNmOTA4MDA3NC1jZjM1LTRjMTQtOTFlOS1lMDQ2NzEzMmIxMTQiLCJpc3MiOiJkaWQ6MzpranpsNmN3ZTFqdzE0YTd1OXN4M3RoeDlnZzl1aDd1NXRxamt6Y25yNXBpNXp6a2FwN2tpenRnc2ZoemF5enQiLCJpc3N1YW5jZURhdGUiOiIyMDIzLTAzLTMwVDE1OjMzOjA0LjI0N1oiLCJpc3N1ZXIiOnsiaWQiOiJkaWQ6MzpranpsNmN3ZTFqdzE0YTd1OXN4M3RoeDlnZzl1aDd1NXRxamt6Y25yNXBpNXp6a2FwN2tpenRnc2ZoemF5enQifSwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCIsIk1lbWJlcnNoaXBDcmVkZW50aWFsIl19.3LNzn7Tr2QcXbS0WHSBDM--nf88fgD5gSz0GqsbYaVzYwB4O_dEKpdDEfE7vK-Y-cVMTnxSU2ya5FCSveEo2Ew",
+        "schema": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
+        "history": [
+            "Migrated from ceramic public tile on 2023-09-08T17:48:19.465Z"
+        ]
+    }
+]
+```
+
