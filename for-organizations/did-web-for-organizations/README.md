@@ -9,8 +9,8 @@ Before signing up for a `did:web` ID, make sure to complete the [getting-started
 ## Signing up for did:web
 
 1. Generate an API Key for your organization (see [generate-an-api-key.md](../../for-builders/generate-an-api-key.md "mention"))
-2. Use [https://secrets.finiam.com/](https://secrets.finiam.com/) to create a secret link for you API Key and email the link, together with your org alias, to masha@disco.xyz and walter@disco.xyz.&#x20;
-3. Disco admin will set up your `did:web`
+2. Email a request for `did:web` with your desired org alias to masha@disco.xyz and walter@disco.xyz.&#x20;
+3. A Disco admin will set up your `did:web`
 4. You'll receive an email with your very own `did:web`  ID and a secret finiman link with an API Key for your new `did:web` ID.&#x20;
 
 Your Disco `did:web` ID will have the following format: `did:web:api.disco.xyz/v1/{your-org-alias}` and will resolve at `https://api.disco.xyz/v1/{your-org-alias}/.well-known/did.json`.   For example:&#x20;
