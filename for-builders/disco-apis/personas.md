@@ -72,13 +72,6 @@ fetch("https://api.disco.xyz/v1/persona/did/did:3:kjzl6cwe1jw14b7xqq94oiy0lcnndg
             "proof": "https://discord.com/channels/947857036257935390/975763597529600041/1128736725682892930"
         },
         {
-            "accountType": "Discord",
-            "handle": "heyevin",
-            "verified": true,
-            "did": "did:3:kjzl6cwe1jw14b7xqq94oiy0lcnndgyt0p3vtlnsscpljosx6gom46qkxcv8sjb",
-            "proof": "https://twitter.com/provenauthority/status/1674454543420260352"
-        },
-        {
             "accountType": "Twitter",
             "handle": "provenauthority",
             "verified": true,
