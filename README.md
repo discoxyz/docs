@@ -34,7 +34,7 @@ The current identity model involves using a unique username and password for eac
 
 We believe that introducing yourself should be seamless in physical and digital reality. With Disco, you’ll be able to own your own identity and reflect yourself in the exact way you want, with maximum consent. In other words, only allowing companies/entities to see your data with your permission. \
 \
-Learn more about Data Backpacks in [How it Works](broken-reference).\
+Learn more about Data Backpacks in [How it Works](https://docs.disco.xyz/disco-docs/introduction/how-it-works).\
 
 
 ### Helpful Links :link:
