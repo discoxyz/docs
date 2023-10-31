@@ -16,7 +16,7 @@ layout:
 
 ## Introduction
 
-Disco empowers builders to use credentials to gate access or create Drops for events. All of these verified credentials and data can viewed in our new Dashboard.&#x20;
+Disco makes it easy for developers to issue verifiable credentials to addresses, and to fetch credentials about those addresses. These credentials capture event metadata or attestations, and can be later relied upon to bootstrap onboarding, manage access control, understand community insights. &#x20;
 
 ## Prerequisites
 
