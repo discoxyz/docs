@@ -16,24 +16,38 @@ layout:
 
 ## Introduction
 
-Disco empowers builders to use credentials to gate access or create Drops for events. All of these credentials and data can viewed in our new Dashboard.&#x20;
+Disco empowers builders to use credentials to gate access or create Drops for events. All of these verified credentials and data can viewed in our new Dashboard.&#x20;
 
 ## Prerequisites
 
-You will need the following to start using our API:
+Create an API Key to start using the Disco API
 
-* Use Postman or curl libraries
-* Generate an API key – by creating a data backpack at app.disco.xyz and go to `Edit Profile`.&#x20;
-* (Nice to have - experience using Javascript )
+1. Create a data backpack at [app.disco.xyz](https://app.disco.xyz/)&#x20;
+2. Go to  '`Edit Profile`'&#x20;
+3. Generate API Key&#x20;
+
+\[include a video]&#x20;
+
+## Schemas&#x20;
+
+[Github repository](https://github.com/discoxyz/disco-schemas/tree/main/json) of schemas.
+
+\[outline the purpose of schemas]
 
 ## Start using Disco's API
 
-You can Use [Disco’s API ](https://docs.disco.xyz/disco-docs/for-builders/disco-apis)to fetch profiles or public credentials. For example, you can get a public credential based on its `ID`&#x20;
+Use [Disco’s API ](https://docs.disco.xyz/disco-docs/for-builders/disco-apis)to build or fetch credentials. This method generates signed by Disco. To issue credentials via API with keys you control, see [DID:WEB. ](#user-content-fn-1)[^1]
 
+### Credential Subjects&#x20;
 
+Issue credentials to an ETH address or Decentralized Identifier (DID).
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
+### Fetch Credentials
+
+Fetch a public credential based on its `ID`&#x20;
+
+{% swagger src="../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" expanded="true" %}
+[swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
 #### Usage example&#x20;
@@ -215,17 +229,9 @@ fetch("https://api.disco.xyz/v1/credential/https%3A%2F%2Fapi.disco.xyz%2Fcredent
 
 </details>
 
-## Use Cases
 
-Smart Contracts: District Labs Demo&#x20;
 
-You can gate access to on-chain logic with checking for Verifiable Credentials. Which checks for a valid credential in order to qualify for a Mint.
-
-* &#x20;[District Labs](https://districtlabs.com/) built a demo that allows you to mint a limited edition NFT only if you have a Official Disconaut Credential that has been marked public. More examples [here](https://www.google.com/url?q=https://docs.disco.xyz/disco-docs/demos-and-templates/portability\&sa=D\&source=docs\&ust=1698729125600321\&usg=AOvVaw0L-IV3pfxIRQNa8-k7u7x4).&#x20;
-
-{% embed url="https://www.youtube.com/watch?ab_channel=Masha&v=GL7uLvqC4Tc" %}
-Try the District Disco Mint[ here](https://disco.districtlabs.com/).
-{% endembed %}
+## Sign credentials with your keys
 
 ## Community and Support&#x20;
 
@@ -241,3 +247,6 @@ Join our [Discord](https://discord.com/invite/dPPrZp2efJ)! You can also contact 
 
 &#x20;
 
+
+
+[^1]: add link

@@ -4,6 +4,8 @@ description: How to get and use your very own did:web ID for your organization!
 
 # did:web for Organizations
 
+\[provide a description on what the purpose if this is]&#x20;
+
 Before signing up for a `did:web` ID, make sure to complete the [getting-started.md](../getting-started.md "mention") section for your Organization.
 
 ## Signing up for did:web
