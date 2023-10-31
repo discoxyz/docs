@@ -32,6 +32,8 @@ Create an API Key&#x20;
 
 [Github repository](https://github.com/discoxyz/disco-schemas/tree/main/json) of schemas.
 
+[Schemas 101](../for-builders/disco-apis/schemas-101.md)
+
 \[outline the purpose of schemas]
 
 ## Start using Disco's API
