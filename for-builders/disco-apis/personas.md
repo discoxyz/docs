@@ -47,6 +47,7 @@ fetch("https://api.disco.xyz/v1/persona/did/did:3:kjzl6cwe1jw14b7xqq94oiy0lcnndg
 
 ### Successful Response
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```json
 {
     "id": "3045c158-af4a-417f-a67f-bc8f916b5408",
@@ -63,7 +64,7 @@ fetch("https://api.disco.xyz/v1/persona/did/did:3:kjzl6cwe1jw14b7xqq94oiy0lcnndg
     "avatarUri": "https://uploads-ssl.webflow.com/634f227dc666d2739c1c3959/634f227dc666d26bd21c3a55_14-%20Evin%20McMullen%20original%20BW.png",
     "bio": "GM and welcome to the Disco! ",
     "ethAddress": "0x9c7b16e49c2f579453c45ca0bf7771a43dc61449",
-    "links": [
+    "links": [ // This object holds all the account links for the ID
         {
             "accountType": "Discord",
             "handle": "heyevin",
@@ -86,7 +87,7 @@ fetch("https://api.disco.xyz/v1/persona/did/did:3:kjzl6cwe1jw14b7xqq94oiy0lcnndg
             "backgroundImage": null
         },
         "avatar": "https://uploads-ssl.webflow.com/634f227dc666d2739c1c3959/634f227dc666d26bd21c3a55_14-%20Evin%20McMullen%20original%20BW.png",
-        "accountLinks": [
+        "accountLinks": [ // This object holds all link activity for linked accounts. A user can unlink/relink their accounts and this section will show an item for each linking attempt.
             {
                 "did": "did:3:kjzl6cwe1jw14b7xqq94oiy0lcnndgyt0p3vtlnsscpljosx6gom46qkxcv8sjb",
                 "type": "Discord",
@@ -105,9 +106,10 @@ fetch("https://api.disco.xyz/v1/persona/did/did:3:kjzl6cwe1jw14b7xqq94oiy0lcnndg
         ],
         "username": "provenauthority"
     },
-    "isOrg": true
+    "isOrg": true // If true it indicates that this identity is classified as an orginization.
 }
 ```
+{% endcode %}
 
 ### Get Profile by Ethereum address
 

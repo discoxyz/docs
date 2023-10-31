@@ -2,7 +2,7 @@
 description: The basics of working with existing Credential schemas.
 ---
 
-# Working with Schemas
+# Using Credentials
 
 ## Introduction
 
@@ -190,10 +190,11 @@ Much of this is boilerplate per [W3C specification](https://www.w3.org/TR/vc-dat
 ```
 {% endcode %}
 
-Now let's take a look at how to use this particular schema in programmatic issuance of a single Credential and multiple Credentials.
+Let's take a look at how to use this particular schema in programmatic issuance of a single Credential and multiple Credentials.
 
 **Single Credential Issuance**&#x20;
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```javascript
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
@@ -205,7 +206,7 @@ var raw = JSON.stringify({
   "issuer": "did:3:123abcexample",
   // Link to schema in Disco's repository hosted on Github 
   "schemaUrl": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
-  // The recipient DID whom you want to issue the Credential to
+  // The recipient DID you want to issue the Credential to
   "recipientDID": "did:3:456defexample",
   // The Credential payload unique to this particular schema
   "subjectData": {
@@ -215,7 +216,7 @@ var raw = JSON.stringify({
     "membershipType": "Developer", // Optional
     "organization": "Disco.xyz" // Required per schema spec
   },
-  "expirationDate": "" 
+  "expirationDate": "" // Required, but can be left empty for no expiration
 });
 
 var requestOptions = {
@@ -230,6 +231,64 @@ fetch("https://api.disco.xyz/v1/credential", requestOptions)
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
+{% endcode %}
 
 **Multiple Credential Issuance**&#x20;
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Accept", "*/*");
+myHeaders.append("Authorization", "Bearer <your Disco API key>");
+
+var raw = JSON.stringify({
+  // The issueing DID, for example your Org's DID
+  "issuer": "did:3:123abcexample",
+  // Link to schema in Disco's repository hosted on Github 
+  "schema": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
+  // Encryption suite to use 712 or jwt are support - we encourage using jwt
+  "suite": "jwt",
+  // An array of recipients and their credential payloads unique to this particular schema
+  "subjects": [
+    {
+      "subject": {
+        "id": "did:3:789efexample",
+        "memberId": "123XYZ", // Optional
+        "membershipDescription": "Demo membership to showcase Disco API", // Optional
+        "membershipLevel": "Permanent", // Optional
+        "membershipType": "Developer", // Optional
+        "organization": "Disco.xyz" // Required per schema spec
+      },
+      "recipient": "did:3:789efexample", // Required
+      "expirationDate": "" // Required, but can be left empty for no expiration
+    },
+    {
+      "subject": {
+        "id": "did:3:1011hijexample",
+        "memberId": "678XYZ", // Optional
+        "membershipDescription": "Demo membership to showcase Disco API", // Optional
+        "membershipLevel": "Permanent", // Optional
+        "membershipType": "Developer", // Optional
+        "organization": "Disco.xyz"
+      },
+      "recipient": "did:3:1011hijexample", // Required per schema spec
+      "expirationDate": "" // Required, but can be left empty for no expiration
+    }
+  ]
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.disco.xyz/v1/credentials", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endcode %}
 
