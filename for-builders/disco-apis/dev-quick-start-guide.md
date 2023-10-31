@@ -20,7 +20,7 @@ Disco empowers builders to use credentials to gate access or create Drops for ev
 
 ## Prerequisites
 
-Create an API Key to start using the Disco API
+Create an API Key&#x20;
 
 1. Create a data backpack at [app.disco.xyz](https://app.disco.xyz/)&#x20;
 2. Go to  '`Edit Profile`'&#x20;
@@ -36,7 +36,7 @@ Create an API Key to start using the Disco API
 
 ## Start using Disco's API
 
-Use [Disco’s API ](https://docs.disco.xyz/disco-docs/for-builders/disco-apis)to build or fetch credentials. This method generates signed by Disco. To issue credentials via API with keys you control, see [DID:WEB. ](#user-content-fn-1)[^1]
+Use [Disco’s API ](https://docs.disco.xyz/disco-docs/for-builders/disco-apis)to build and sign or fetch credentials. This method constructs credentials signed by Disco-controlled keys. To issue credentials via API with keys you control, see [DID:WEB. ](#user-content-fn-1)[^1]
 
 ### Credential Subjects&#x20;
 
@@ -46,8 +46,8 @@ Issue credentials to an ETH address or Decentralized Identifier (DID).
 
 Fetch a public credential based on its `ID`&#x20;
 
-{% swagger src="../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" expanded="true" %}
-[swagger.json](../.gitbook/assets/swagger.json)
+{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" expanded="true" %}
+[swagger.json](../../.gitbook/assets/swagger.json)
 {% endswagger %}
 
 #### Usage example&#x20;
