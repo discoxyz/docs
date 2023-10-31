@@ -34,7 +34,7 @@ Schemas defines the structure and contents of a credential. Enabling the verifia
 
 ## Start using Disco's API
 
-Use [Disco’s API ](https://docs.disco.xyz/disco-docs/for-builders/disco-apis)to build and sign or fetch credentials. This method constructs credentials signed by Disco-controlled keys. To issue credentials via API with keys you control, see [DID:WEB. ](#user-content-fn-1)[^1]
+Use Disco’s API to build and sign or fetch credentials. This method constructs credentials signed by Disco-controlled keys. To issue credentials via API with keys you control, see [DID:WEB. ](#user-content-fn-1)[^1]
 
 ### Credential Subject&#x20;
 
