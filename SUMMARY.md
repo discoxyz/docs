@@ -10,7 +10,7 @@
 * [🔮 Architecture](introduction/architecture/README.md)
   * [Components](introduction/architecture/components.md)
   * [Lifecycle of Credentials](introduction/architecture/lifecycle-of-credentials.md)
-* [Dev Quick Start Guide](for-builders/disco-apis/dev-quick-start-guide.md)
+* [Quick Start Guide](introduction/quick-start-guide.md)
 
 ## Getting Started
 

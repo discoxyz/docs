@@ -12,11 +12,11 @@ layout:
     visible: true
 ---
 
-# Dev Quick Start Guide
+# Quick Start Guide
 
 ## Introduction
 
-Disco makes it easy for developers to issue verifiable credentials to addresses, and to fetch credentials about those addresses. These credentials capture event metadata or attestations, and can be later relied upon to bootstrap onboarding, manage access control, understand community insights. &#x20;
+The Disco API enables developers to issue verifiable credentials to addresses, and to fetch and validate credentials about those addresses. These credentials use standard data models (_schemas),_ contain event metadata or attestations, and can be later fetched and relied upon to bootstrap onboarding, manage access control, and understand community insights. &#x20;
 
 ## Prerequisites
 
@@ -46,8 +46,8 @@ Issue credentials to an ETH address or Decentralized Identifier (DID).
 
 Fetch a public credential based on its `ID`&#x20;
 
-{% swagger src="../../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" expanded="true" %}
-[swagger.json](../../.gitbook/assets/swagger.json)
+{% swagger src="../.gitbook/assets/swagger.json" path="/v1/credential/{id}" method="get" expanded="true" %}
+[swagger.json](../.gitbook/assets/swagger.json)
 {% endswagger %}
 
 #### Usage example&#x20;
