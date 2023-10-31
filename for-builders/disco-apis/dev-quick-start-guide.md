@@ -22,9 +22,9 @@ Disco empowers builders to use credentials to gate access or create Drops for ev
 
 You will need the following to start using our API:
 
-* Experience using Javascript&#x20;
-* Use [http](https://github.com/topics/http-library) & curl libraries
+* Use Postman or curl libraries
 * Generate an API key – by creating a data backpack at app.disco.xyz and go to `Edit Profile`.&#x20;
+* (Nice to have - experience using Javascript )
 
 ## Start using Disco's API
 
@@ -226,8 +226,6 @@ You can gate access to on-chain logic with checking for Verifiable Credentials. 
 {% embed url="https://www.youtube.com/watch?ab_channel=Masha&v=GL7uLvqC4Tc" %}
 Try the District Disco Mint[ here](https://disco.districtlabs.com/).
 {% endembed %}
-
-
 
 ## Community and Support&#x20;
 
