@@ -10,7 +10,9 @@ For Verifiable Credentials schemas there are generally two types usages; 1) data
 
 ### Schema Types&#x20;
 
-All schemas in a [github repo](https://github.com/discoxyz/disco-schemas).&#x20;
+Schemas can be found in our [github repo](https://github.com/discoxyz/disco-schemas).&#x20;
+
+### Example
 
 Developers can use any of these schemas in their development.  Working with the myriad of available schemas can be overwhelming at first, so let's take a look at an example first - [MembershipCredential](https://github.com/discoxyz/disco-schemas/blob/main/json/MembershipCredential/latest.json).&#x20;
 
