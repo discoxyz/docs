@@ -32,6 +32,10 @@ Schemas defines the structure and contents of a credential. Enabling the verifia
 
 [Github repository](https://github.com/discoxyz/disco-schemas/tree/main/json) of schemas.
 
+{% hint style="info" %}
+Always use Schemas raw files, [example](https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/AccountLinkageCredential/1-0-0.json).&#x20;
+{% endhint %}
+
 ## Start using Disco's API
 
 Use Disco’s API to build and sign or fetch credentials. This method constructs credentials signed by Disco-controlled keys. To issue credentials via API with keys you control, see [DID:WEB. ](#user-content-fn-1)[^1]
