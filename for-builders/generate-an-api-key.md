@@ -6,7 +6,7 @@ Generating an API key enables you programmatically issue credentials to your use
 
 Generating an API is seamless via our self-service experience
 
-Log into [app.disco.xyz/ ](https://app.disco.xyz/)and navigate to your _Profile > Settings ⚙️ > Api Keys > + Create API Key_
+Log into [app.disco.xyz/ ](https://app.disco.xyz/)and navigate to your Profile > _Edit Profile >  Create API Key_
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-06-28 at 11.14.43 AM.png" alt=""><figcaption></figcaption></figure>
 
