@@ -8,7 +8,11 @@ description: The basics of working with existing Credential schemas.
 
 For Verifiable Credentials schemas there are generally two types usages; 1) data verification and 2) data encoding. Data Verification is of interest here. Schemas per W3C Verifiable Credential spec includes a vast amount of metadata. With that in mind we will be focusing on pieces relevant to most developers - `credentialSubject`.
 
-Disco manages all  schemas in a [github repo](https://github.com/discoxyz/disco-schemas). Developers can use any of these schemas in their development.  Working with the myriad of available schemas can be overwhelming at first, so let's take a look at an example first - [MembershipCredential](https://github.com/discoxyz/disco-schemas/blob/main/json/MembershipCredential/latest.json).&#x20;
+### Schema Types&#x20;
+
+All schemas in a [github repo](https://github.com/discoxyz/disco-schemas).&#x20;
+
+Developers can use any of these schemas in their development.  Working with the myriad of available schemas can be overwhelming at first, so let's take a look at an example first - [MembershipCredential](https://github.com/discoxyz/disco-schemas/blob/main/json/MembershipCredential/latest.json).&#x20;
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
