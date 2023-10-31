@@ -10,7 +10,11 @@ For Verifiable Credentials schemas there are generally two types usages; 1) data
 
 ### Schema Types&#x20;
 
-Schemas can be found in our [github repo](https://github.com/discoxyz/disco-schemas).&#x20;
+Schemas can be found in our [github repo](https://github.com/discoxyz/disco-schemas/tree/main/json).&#x20;
+
+{% hint style="info" %}
+Always use Schemas use raw files
+{% endhint %}
 
 ### Example
 
