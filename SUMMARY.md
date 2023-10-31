@@ -2,7 +2,8 @@
 
 ## Introduction
 
-* [🔮 What is Disco?](README.md)
+* [Quick Start Guide](README.md)
+* [🔮 What is Disco?](<README (1).md>)
 * [🔮 How it works](introduction/how-it-works/README.md)
   * [Data Backpacks](introduction/how-it-works/data-backpacks.md)
   * [Verifiable Credentials](introduction/how-it-works/verifiable-credentials.md)
@@ -10,7 +11,6 @@
 * [🔮 Architecture](introduction/architecture/README.md)
   * [Components](introduction/architecture/components.md)
   * [Lifecycle of Credentials](introduction/architecture/lifecycle-of-credentials.md)
-* [Quick Start Guide](for-builders/disco-apis/dev-quick-start-guide.md)
 
 ## Getting Started
 
