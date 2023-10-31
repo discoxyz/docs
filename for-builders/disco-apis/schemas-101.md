@@ -2,13 +2,13 @@
 description: The basics of working with existing Credential schemas.
 ---
 
-# Using Credentials
+# Schemas 101
 
 ## Introduction
 
-For Verifiable Credentials there are generally two types of data schemas used; 1) data verification schemas and 2) data encoding schemas. The former type is where we will focus as 99% of non-complex use cases do not require mappings to alternative representation formats (e.g., binary). Disco manages all your schemas in a [github repo](https://github.com/discoxyz/disco-schemas). Developers can use any of these schemas in their development. Also, the selection is constantly growing - if you have requests for new schemas reach out to us on [Discord](https://discord.com/channels/947857036257935390/1091134162590769253).&#x20;
+For Verifiable Credentials schemas there are generally two types usages; 1) data verification and 2) data encoding. Data Verification is of interest here. Schemas per W3C Verifiable Credential spec includes a vast amount of metadata. With that in mind we will be focusing on pieces relevant to most developers - `credentialSubject`.
 
-Working with the myriad of available Credential schemas (i.e., Credential types) can be overwhelming at first, so let's take a look at an example first - [MembershipCredential](https://github.com/discoxyz/disco-schemas/blob/main/json/MembershipCredential/latest.json).&#x20;
+Disco manages all  schemas in a [github repo](https://github.com/discoxyz/disco-schemas). Developers can use any of these schemas in their development.  Working with the myriad of available schemas can be overwhelming at first, so let's take a look at an example first - [MembershipCredential](https://github.com/discoxyz/disco-schemas/blob/main/json/MembershipCredential/latest.json).&#x20;
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
@@ -144,7 +144,7 @@ Working with the myriad of available Credential schemas (i.e., Credential types)
 ```
 {% endcode %}
 
-Much of this is boilerplate per [W3C specification](https://www.w3.org/TR/vc-data-model/#basic-concepts), so let's take a closer look at the fields unique to   [MembershipCredential](https://github.com/discoxyz/disco-schemas/blob/main/json/MembershipCredential/latest.json)  Credentials schema which are all in the `credentialSubject` object:
+As mentioned above, much of this is boilerplate per [W3C specification](https://www.w3.org/TR/vc-data-model/#basic-concepts), what is unique to [MembershipCredential](https://github.com/discoxyz/disco-schemas/blob/main/json/MembershipCredential/latest.json) (and any other schemas for that matter) is in the `credentialSubject` object. Note that the last object, named `required` in the `credentialSubject` list the fields which _must_ be provided for this particular schema.
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
@@ -152,36 +152,36 @@ Much of this is boilerplate per [W3C specification](https://www.w3.org/TR/vc-dat
   ...
     "credentialSubject": { // The Verifiable Credential payload object. This is where all fields pertaining to the specific credential type resides. 
       "properties": { 
-        "expiration": { // Standard to the VC Credential protocol - an optional expiration date for the Credential.
+        "expiration": { // Standard to the W3C VC protocol - an optional expiration date for the Credential.
           "format": "date",
           "title": "Expiration",
           "type": "string"
         },
-        "id": ... , // Standard to the VC Credential protocol - a unique credential identifier assigned by the system
-        "memberId": { // Unique to this particular Credential schema
+        "id": ... , // Standard to the W3C VC protocol - a unique credential identifier assigned by the system. As a developer you do NOT include this in API calls for creating your Credential.
+        "memberId": { // Optional and unique to this particular schema - use whatever membership ID you want to refer to - or may be left out if not used.
           "title": "Member ID",
           "type": "string"
         },
-        "membershipDescription": { // Unique to this particular Credential schema
+        "membershipDescription": { // Optional and unique to this particular schema - describe what the membership is for to the recipient and verifiers - or may be left out if not used.
           "title": "Membership Description",
           "type": "string"
         },
-        "membershipLevel": { // Unique to this particular Credential schema
+        "membershipLevel": { // Optional and unique to this particular schema - if your membership is hierarchical you can use this to indicate the level - or may be left out if not used.
           "title": "Membership Level",
           "type": "string"
         },
-        "membershipType": { // Unique to this particular Credential schema
+        "membershipType": { // Optional and unique to this particular schema - can be used to describe the membership type issued- or may be left out if not used.
           "title": "Membership Type",
           "type": "string"
         },
-        "organization": { // Unique to this particular Credential schema
+        "organization": { // Required and unique to this particular schema - the name of the organization for which this membership is issued for.
           "title": "Organization Name",
           "type": "string"
         }
       },
-      "required": [ // Required fields Unique to this particular Credential schema
-        "id", 
-        "organization"
+      "required": [ // Required fields Unique to this particular schema
+        "id", // ALWAYS system generated
+        "organization" // Provided by you, the developer
       ],
       "type": "object"
     }, 
@@ -190,9 +190,7 @@ Much of this is boilerplate per [W3C specification](https://www.w3.org/TR/vc-dat
 ```
 {% endcode %}
 
-Let's take a look at how to use this particular schema in programmatic issuance of a single Credential and multiple Credentials.
-
-**Single Credential Issuance**&#x20;
+Let's take a look at how to use this particular schema in programmatic issuance of a single Credential.
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
@@ -202,21 +200,22 @@ myHeaders.append("Accept", "*/*");
 myHeaders.append("Authorization", "Bearer <your Disco API key>");
 
 var raw = JSON.stringify({
-  // The issueing DID, for example your Org's DID
+  // The issueing DID - the owner of the API Key used in "Authorization"
   "issuer": "did:3:123abcexample",
   // Link to schema in Disco's repository hosted on Github 
   "schemaUrl": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
-  // The recipient DID you want to issue the Credential to
+  // The recipient DID to issue the Credential to
   "recipientDID": "did:3:456defexample",
-  // The Credential payload unique to this particular schema
+  // The Credential payload unique to this particular schema - SEE ABOVE
   "subjectData": {
     "memberId": "123XYZ", // Optional
     "membershipDescription": "Demo membership to showcase Disco API", // Optional
     "membershipLevel": "Permanent", // Optional
     "membershipType": "Developer", // Optional
-    "organization": "Disco.xyz" // Required per schema spec
+    "organization": "Disco.xyz" // Required 
   },
-  "expirationDate": "" // Required, but can be left empty for no expiration
+  // Expiration date of Credential, if any
+  "expirationDate": "" // Field is required, BUT can be left empty to indicate no expiration
 });
 
 var requestOptions = {
@@ -226,66 +225,8 @@ var requestOptions = {
   redirect: 'follow'
 };
 
+// Fire-and-forget
 fetch("https://api.disco.xyz/v1/credential", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-```
-{% endcode %}
-
-**Multiple Credential Issuance**&#x20;
-
-{% code overflow="wrap" lineNumbers="true" %}
-```javascript
-var myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
-myHeaders.append("Accept", "*/*");
-myHeaders.append("Authorization", "Bearer <your Disco API key>");
-
-var raw = JSON.stringify({
-  // The issueing DID, for example your Org's DID
-  "issuer": "did:3:123abcexample",
-  // Link to schema in Disco's repository hosted on Github 
-  "schema": "https://raw.githubusercontent.com/discoxyz/disco-schemas/main/json/MembershipCredential/1-0-0.json",
-  // Encryption suite to use 712 or jwt are support - we encourage using jwt
-  "suite": "jwt",
-  // An array of recipients and their credential payloads unique to this particular schema
-  "subjects": [
-    {
-      "subject": {
-        "id": "did:3:789efexample",
-        "memberId": "123XYZ", // Optional
-        "membershipDescription": "Demo membership to showcase Disco API", // Optional
-        "membershipLevel": "Permanent", // Optional
-        "membershipType": "Developer", // Optional
-        "organization": "Disco.xyz" // Required per schema spec
-      },
-      "recipient": "did:3:789efexample", // Required
-      "expirationDate": "" // Required, but can be left empty for no expiration
-    },
-    {
-      "subject": {
-        "id": "did:3:1011hijexample",
-        "memberId": "678XYZ", // Optional
-        "membershipDescription": "Demo membership to showcase Disco API", // Optional
-        "membershipLevel": "Permanent", // Optional
-        "membershipType": "Developer", // Optional
-        "organization": "Disco.xyz"
-      },
-      "recipient": "did:3:1011hijexample", // Required per schema spec
-      "expirationDate": "" // Required, but can be left empty for no expiration
-    }
-  ]
-});
-
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: raw,
-  redirect: 'follow'
-};
-
-fetch("https://api.disco.xyz/v1/credentials", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));

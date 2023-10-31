@@ -44,7 +44,7 @@
   * [Retrieving Credentials](for-builders/disco-apis/retrieving-credentials.md)
   * [Verify a Credential](for-builders/disco-apis/verify-a-credential.md)
   * [Personas](for-builders/disco-apis/personas.md)
-  * [Using Credentials](for-builders/disco-apis/working-with-schemas.md)
+  * [Schemas 101](for-builders/disco-apis/schemas-101.md)
 * [⚙ Disco SDKs](for-builders/disco-sdks/README.md)
   * [Selective Disclosure](for-builders/disco-sdks/selective-disclosure/README.md)
     * [@discoxyz/selective-disclosure (alpha)](for-builders/disco-sdks/selective-disclosure/discoxyz-selective-disclosure-alpha.md)
