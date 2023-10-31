@@ -10,7 +10,7 @@
 * [🔮 Architecture](introduction/architecture/README.md)
   * [Components](introduction/architecture/components.md)
   * [Lifecycle of Credentials](introduction/architecture/lifecycle-of-credentials.md)
-* [Quick Start Guide](introduction/quick-start-guide.md)
+* [Quick Start Guide](for-builders/disco-apis/dev-quick-start-guide.md)
 
 ## Getting Started
 
@@ -41,6 +41,7 @@
 * [Data Model](for-builders/data-model.md)
 * [⚙ Disco APIs](for-builders/disco-apis/README.md)
   * [Issuing Credentials](for-builders/disco-apis/issuing-credentials.md)
+  * [Automatically Issue Verifiable Credentials](for-builders/disco-apis/automatically-issue-verifiable-credentials.md)
   * [Retrieving Credentials](for-builders/disco-apis/retrieving-credentials.md)
   * [Verify a Credential](for-builders/disco-apis/verify-a-credential.md)
   * [Personas](for-builders/disco-apis/personas.md)
