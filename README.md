@@ -436,15 +436,9 @@ fetch("https://api.disco.xyz/v1/credential/https%3A%2F%2Fapi.disco.xyz%2Fcredent
 
 </details>
 
-
-
-## Sign credentials with your keys
-
 ## Community and Support&#x20;
 
 Join our [Discord](https://discord.com/invite/dPPrZp2efJ)! You can also contact us at ask@disco.xyz.&#x20;
-
-{% embed url="https://discord.com/invite/dPPrZp2efJ" %}
 
 
 
