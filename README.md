@@ -24,7 +24,7 @@ The Disco API enables developers to issue verifiable credentials to addresses, a
 
 To use Disco's API, you will need an API Key. Steps to generate an API Key.&#x20;
 
-1. Create a data backpack at app.disco.xyz&#x20;
+1. Create a data backpack at [app.disco.xyz ](https://app.disco.xyz/)
 2. Go to  '`Edit Profile`'&#x20;
 3. Generate API Key&#x20;
 
