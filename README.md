@@ -14,13 +14,15 @@ layout:
 
 # Quick Start Guide
 
+_Takes 5-7 minutes!_&#x20;
+
 ## Introduction
 
 The Disco API enables developers to issue verifiable credentials to addresses, and to fetch and validate credentials about those addresses. These credentials use standard data models (_schemas),_ contain event metadata or attestations, and can be later fetched and relied upon to bootstrap onboarding, manage access control, and understand community insights. &#x20;
 
 ## Prerequisites
 
-You will need the following to start using our API:
+To use Dicso's API, you will need an API Key. Steps to generate an API Key.&#x20;
 
 1. Create a data backpack at [app.disco.xyz](https://app.disco.xyz/)&#x20;
 2. Go to  '`Edit Profile`'&#x20;
