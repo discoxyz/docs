@@ -2,7 +2,7 @@
 
 ## Introduction
 
-* [Quick Start Guide](README.md)
+* [⚡️ Quick Start Guide](README.md)
 * [🔮 What is Disco?](<README (1).md>)
 * [🔮 How it works](introduction/how-it-works/README.md)
   * [Data Backpacks](introduction/how-it-works/data-backpacks.md)
