@@ -230,7 +230,7 @@ const issuers = res.map((vc:any) => {
     return vc.issuer.id;
 })</strong>
 
-//Now with the issuers we can see who signed the metIRL credential for this user
+//Now with the issuers we can see who signed the credential for this user
 console.log(issuers)
 
 </pre>
