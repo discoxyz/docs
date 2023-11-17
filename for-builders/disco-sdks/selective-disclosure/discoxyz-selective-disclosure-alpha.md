@@ -191,4 +191,51 @@ const Disclose: React.FC = () => {
 {% endtab %}
 {% endtabs %}
 
+
+## Extracting Issuers
+
+Example:
+{% tabs %}
+{% tab title="Node" %}
+<pre class="language-tsx"><code class="lang-tsx">// Received Presentaion
+const result = {
+    "presentation": {
+        ..., //other properties
+        "verifiableCredential": [
+
+        ]
+    },
+    "status": "success",
+    "message":
+}
+
+// After receiving the presentation, 
+// you can extract the credentials array from the following properties.
+
+<strong>const credentials = result.presentation.verifiableCredential</strong>
+
+// These Credentials can either be JWT's or JSON-LD. 
+// You can use a regex like below to determine 
+// And a library like did-jwt or jsonwebtoken to decode the jwts.
+
+<strong>import { decodeJWT } from "did-jwt";
+
+const jwtRegex = /^([a-zA-Z0-9_-]+)\.([a-zA-Z0-9_-]+)\.([a-zA-Z0-9_-]+)$/;
+
+const res = vp.presentation.verifiableCredential.map((vc: any) => {
+    return vc.match(jwtRegex) ? decodeJWT(vc).payload : JSON.parse(vc)
+})
+
+const issuers = res.map((vc:any) => {
+    return vc.issuer.id;
+})</strong>
+
+//Now with the issuers we can see who signed the metIRL credential for this user
+console.log(issuers)
+
+</pre>
+{% endtab %}
+{% endtabs %}
+
+
 [^1]: 
